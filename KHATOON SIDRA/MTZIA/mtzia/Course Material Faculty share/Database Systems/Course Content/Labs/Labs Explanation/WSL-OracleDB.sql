@@ -1,0 +1,128 @@
+create table dept(  
+  deptno     number(2,0),  
+  dname      varchar2(14),  
+  loc        varchar2(13),  
+  constraint pk_dept primary key (deptno)  
+);
+/
+create table emp(  
+  empno    number(4,0),  
+  ename    varchar2(10),  
+  job      varchar2(9),  
+  mgr      number(4,0),  
+  hiredate date,  
+  sal      number(7,2),  
+  comm     number(7,2),  
+  deptno   number(2,0),  
+  constraint pk_emp primary key (empno),  
+  constraint fk_deptno foreign key (deptno) references dept (deptno)  
+);
+/
+insert all
+  into DEPT values(10, 'ACCOUNTING', 'NEW YORK')
+  into dept values(20, 'RESEARCH', 'DALLAS')
+  into dept values(30, 'SALES', 'CHICAGO')
+  into dept values(40, 'OPERATIONS', 'BOSTON')
+SELECT * FROM dual;
+/
+
+
+SELECT * FROM EMP ;
+
+INSERT INTO emp values  ( 7913, 'FORD', 'ANALYST', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7914, 'FORD', 'SOFTWARE', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7915, 'FORD', 'ANALYST', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7916, 'FORD', 'ENGINEER', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7917, 'FORD', 'ANALYST', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7918, 'FORD', 'ELECTRO', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7919, 'FORD', 'ANALYST', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7920, 'FORD', 'MARKETING', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7921, 'FORD', 'ANALYST', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7922, 'FORD', 'TELECOM', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7923, 'FORD', 'ANALYST', 7566, to_date('3-12-1981','dd-mm-yyyy'), 3000, null, 20);
+INSERT INTO emp values  ( 7924, 'FORD', 'ACCOUNTS', 7566, to_date('3-12-2004','dd-mm-yyyy'), 8000, null, 20);
+
+
+SELECT 'The job title for ' || INITCAP(ename) || ' is ' || LOWER(job) AS "EMPLOYEE DETAILS" 
+FROM emp;
+
+SELECT empno, UPPER(ename), deptno 
+FROM emp 
+WHERE LOWER(ename) = 'ford';
+
+SELECT empno, CONCAT(ename, job), LENGTH(ename), INSTR(ename, 'A') 
+FROM emp 
+WHERE SUBSTR(job, 1, 5) = 'SOFTWARE';
+
+SELECT ROUND(45.923, 2), ROUND(45.923, 0), ROUND(45.923, -1) 
+FROM DUAL;
+
+SELECT ename, sal, comm, MOD(sal, comm) 
+FROM emp 
+WHERE UPPER(job) = 'MARKETING';
+
+SELECT SYSDATE 
+FROM DUAL;
+
+
+SELECT ename, (SYSDATE - HIREDATE) / 7 AS "Number of Weeks"
+FROM emp 
+WHERE deptno = 10;
+
+SELECT empno, hiredate, MONTHS_BETWEEN(SYSDATE, hiredate) AS TENURE, ADD_MONTHS(hiredate, 6) AS REVIEW, NEXT_DAY(hiredate, 'FRIDAY'), LAST_DAY(hiredate)
+FROM emp 
+WHERE MONTHS_BETWEEN(SYSDATE, hiredate) < 2000;
+
+SELECT empno, hiredate, ROUND(hiredate, 'MONTH'), TRUNC(hiredate, 'MONTH') 
+FROM emp 
+WHERE hiredate LIKE '%92';
+
+SELECT empno, TO_CHAR(hiredate, 'MM/YY') AS Month_Hired 
+FROM emp 
+WHERE ename = 'FORD';
+
+SELECT ename, TO_CHAR(hiredate, 'fmDD Month YYYY') AS HIREDATE 
+FROM emp;
+
+SELECT TO_CHAR(sal, '$99,999') AS SALARY 
+FROM emp 
+WHERE ename = 'FORD';
+
+SELECT ename, hiredate 
+FROM emp 
+WHERE hiredate = TO_DATE('February 22, 1991', 'Month dd, YYYY');
+
+SELECT job, sal, DECODE(job, 'ANALYST', sal * 1.1, 'CLERK', sal * 1.15, 'MANAGER', sal * 1.20, sal) AS REVISED_SALARY 
+FROM emp;
+
+SELECT AVG(sal), MIN(sal), MAX(sal), COUNT(*) 
+FROM emp;
+
+SELECT deptno, AVG(sal) AS AVERAGE_SALARY 
+FROM emp 
+GROUP BY deptno;
+
+SELECT deptno, AVG(sal), MAX(sal) 
+FROM emp 
+GROUP BY deptno 
+HAVING AVG(sal) > 2000 
+ORDER BY AVG(sal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

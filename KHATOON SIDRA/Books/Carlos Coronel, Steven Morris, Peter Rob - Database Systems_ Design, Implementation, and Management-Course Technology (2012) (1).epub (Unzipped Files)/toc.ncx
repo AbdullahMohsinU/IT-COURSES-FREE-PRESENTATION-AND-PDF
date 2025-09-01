@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="e1925d93-1eb6-4c58-8b55-619361627e4f" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (0.9.14)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Database Systems: Design, Implementation, and Management, 10th Ed.</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="35749e40-ea26-483c-ae99-e8c6ec032ecb" playOrder="1">
+      <navLabel>
+        <text>PART I:      D ATABASE C ONCEPTS</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_009.html"/>
+      <navPoint class="chapter" id="e18edbf3-84fd-4163-affb-59403764ff29" playOrder="2">
+        <navLabel>
+          <text>Chapter 1: Database Systems</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_011.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="4e8cb507-c58b-4945-b471-fc5ce4aebb14" playOrder="3">
+        <navLabel>
+          <text>Chapter 2: Data Models</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_012.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="88c98ade-ff77-49b2-8048-a54ad77d1ada" playOrder="4">
+      <navLabel>
+        <text>PART II:     D ESIGN C ONCEPTS</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_013.html"/>
+      <navPoint class="chapter" id="d4835881-c547-4557-8f88-493fb00bf148" playOrder="5">
+        <navLabel>
+          <text>Chapter 3: The Relational Database Model</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_015.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="b2e4636f-3c31-41b3-894a-807124c55ba5" playOrder="6">
+        <navLabel>
+          <text>Chapter 4: Entity Relationship (ER) Modeling</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_016.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="fe4cb139-4137-45cd-a884-20e121a8e58a" playOrder="7">
+        <navLabel>
+          <text>Chapter 5: Advanced Data Modeling</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_017.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="57a8e095-506f-45ab-8b3e-8bcf3630c115" playOrder="8">
+        <navLabel>
+          <text>Chapter 6: Normalization of Database Tables</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_018.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="b594b8f4-6e1e-444a-a291-67408974c1d2" playOrder="9">
+      <navLabel>
+        <text>PART III:    A DVANCED D ESIGN AND I MPLEMENTATION</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_019.html#filepos1013755"/>
+      <navPoint class="chapter" id="275c55d9-4b6d-4904-b8b6-0d762ebf2fa0" playOrder="10">
+        <navLabel>
+          <text>Chapter 7: Introduction to Structured Query Language (SQL)</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="b5d30e08-415b-4425-bcaf-fd3a326d3ada" playOrder="11">
+        <navLabel>
+          <text>Chapter 8: Advanced SQL</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_023.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="83b413bd-79f8-46d6-b5b3-ff78fea8f0fd" playOrder="12">
+        <navLabel>
+          <text>Chapter 9: Database Design</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_024.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="164b0805-f996-4258-b3ef-d22e6feb83a0" playOrder="13">
+      <navLabel>
+        <text>PART IV:    A DVANCED D ATABASE C ONCEPTS</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_026.html"/>
+      <navPoint class="chapter" id="f974a7da-18ef-4b74-a445-6c2b93b2452f" playOrder="14">
+        <navLabel>
+          <text>Chapter 10: Transaction Management and Concurrency Control</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_028.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="3884f0ff-8193-4a83-9d4a-1455bb4bedec" playOrder="15">
+        <navLabel>
+          <text>Chapter 11: Database Performance Tuning and Query Optimization</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_029.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="fb2b8161-1d03-4430-969f-76d3bfa5599f" playOrder="16">
+        <navLabel>
+          <text>Chapter 12: Distributed Database Management Systems</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_030.html#filepos2024073"/>
+      </navPoint>
+      <navPoint class="chapter" id="88b1bcc0-e250-45b2-aa14-c206ae3354f2" playOrder="17">
+        <navLabel>
+          <text>Chapter 13: Business Intelligence and Data Warehouses</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_031.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="d99b5194-c806-419b-b9df-03d023103b52" playOrder="18">
+      <navLabel>
+        <text>PART V:     D ATABASES AND T HE I NTERNET</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_032.html"/>
+      <navPoint class="chapter" id="755d8e47-8761-4585-8932-fc7a897724a3" playOrder="19">
+        <navLabel>
+          <text>Chapter 14: Database Connectivity and Web Technologies</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_034.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="50fe8598-1375-4e8e-b2de-acc1efac6b9d" playOrder="20">
+      <navLabel>
+        <text>PART VI:    D ATABASE A DMINISTRATION</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_035.html"/>
+      <navPoint class="chapter" id="2e83b920-6afd-47f5-b808-852cbaa60309" playOrder="21">
+        <navLabel>
+          <text>Chapter 15: Database Administration and Security</text>
+        </navLabel>
+        <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_037.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="d506bea9-de7e-45f4-a149-0c34fed3defb" playOrder="22">
+      <navLabel>
+        <text>GLOSSARY</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_038.html"/>
+    </navPoint>
+    <navPoint class="chapter" id="abe75226-6f76-473b-8a1d-5fa556e421e1" playOrder="23">
+      <navLabel>
+        <text>INDEX</text>
+      </navLabel>
+      <content src="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_039.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

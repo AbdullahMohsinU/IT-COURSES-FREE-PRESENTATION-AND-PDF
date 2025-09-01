@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Database Systems: Design, Implementation, and Management, Tenth Edition</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+<link href="page_styles.css" type="text/css" rel="stylesheet"/>
+</head>
+  <body class="calibre">
+<div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     DML commands allow you to add, modify, and delete rows from tables. The basic DML commands are SELECT, INSERT, UPDATE, DELETE, COMMIT, and ROLLBACK.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     The INSERT command is used to add new rows to tables. The UPDATE command is used to modify data values in existing rows of a table. The DELETE command is used to delete rows from tables. The COMMIT and ROLLBACK commands are used to permanently save or roll back changes made to the rows. Once you COMMIT the changes, you cannot undo them with a ROLLBACK command.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     The SELECT statement is the main data retrieval command in SQL. A SELECT statement has the following syntax:</span></p><div class="calibre3"> </div>
+<div class="calibre58"> </div><table class="calibre59"><span class="calibre5">
+<tr class="calibre61"><td class="calibre62">           SELECT</td>
+<td class="calibre62"><em class="italic">columnlist</em></td>
+</tr><tr class="calibre61"><td class="calibre62">           FROM</td>
+<td class="calibre62"><em class="italic">tablelist</em></td>
+</tr><tr class="calibre61"><td class="calibre62">           [WHERE</td>
+<td class="calibre62"><em class="italic">conditionlist</em> ]</td>
+</tr><tr class="calibre61"><td class="calibre62">           [GROUP BY</td>
+<td class="calibre62"><em class="italic">columnlist</em> ]</td>
+</tr><tr class="calibre61"><td class="calibre62">           [HAVING</td>
+<td class="calibre62"><em class="italic">conditionlist</em> ]</td>
+</tr><tr class="calibre61"><td class="calibre62">           [ORDER BY    </td>
+<td class="calibre62"><em class="italic">columnlist</em> [ASC | DESC] ] ;</td>
+</tr></span></table><div class="calibre64"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     The column list represents one or more column names separated by commas. The column list may also include computed columns, aliases, and aggregate functions. A computed column is represented by an expression or formula (for example, P_PRICE * P_QOH). The FROM clause contains a list of table names.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     The WHERE clause can be used with the SELECT, UPDATE, and DELETE statements to restrict the rows affected by the DDL command. The condition list represents one or more conditional expressions separated by logical operators (AND, OR, and NOT). The conditional expression can contain any comparison operators (=, &gt;, &lt;, &gt;=, &lt;=, and &lt;&gt;) as well as special operators (BETWEEN, IS NULL, LIKE, IN, and EXISTS).</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     Aggregate functions (COUNT, MIN, MAX, and AVG) are special functions that perform arithmetic computations over a set of rows. The aggregate functions are usually used in conjunction with the GROUP BY clause to group the output of aggregate computations by one or more attributes. The HAVING clause is used to restrict the output of the GROUP BY clause by selecting only the aggregate rows that match a given condition.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     The ORDER BY clause is used to sort the output of a SELECT statement. The ORDER BY clause can sort by one or more columns and can use either ascending or descending order.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     You can join the output of multiple tables with the SELECT statement. The join operation is performed every time you specify two or more tables in the FROM clause and use a join condition in the WHERE clause to match the foreign key of one table to the primary key of the related table. If you do not specify a join condition, the DBMS will automatically perform a Cartesian product of the tables you specify in the FROM clause.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><img alt="img" src="images/00030.jpg" class="calibre7"/>     The natural join uses the join condition to match only rows with equal values in the specified columns.</span></p><div class="calibre3"> </div>
+<hr class="calibre10"/><p class="calibre80"><span class="calibre8"><span class="calibre14"><a id="filepos1238896"></a>KEY TERMS</span></span></p><hr class="calibre10"/><blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1131948">alias</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1161817">ALTER TABLE</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1138854">AND</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1045167">authentication</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1209885">AVG</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1145991">BETWEEN</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1143629">Boolean algebra</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1191302">cascading order sequence</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1098632">COMMIT</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1198870">COUNT</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1087359">CREATE INDEX</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1059772">CREATE TABLE</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1112110">DELETE</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1194858">DISTINCT</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1091223">DROP INDEX</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1186318">DROP TABLE</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1146758">EXISTS</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1211466">GROUP BY</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1216524">HAVING</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1146555">IN</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1115040">inner query</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1092624">INSERT</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1146179">IS NULL</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1146357">LIKE</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1203291">MAX</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1203350">MIN</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1114970">nested query</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1138969">NOT</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1138910">OR</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1187905">ORDER BY</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1230672">recursive query</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1071623">reserved words</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1109165">ROLLBACK</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1137099">rules of precedence</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1045832">schema</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1100735">SELECT</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1114893">subquery</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1208191">SUM</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1106560">UPDATE</a></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre78"><span class="calibre5"><a href="CR%215A4MGEVRHD03Z2219SKHVZ3J0KMH_split_021.html#filepos1101242">wildcard character</a></span></p></blockquote>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre63"><span class="calibre35"><img alt="img" src="images/00023.jpg" class="calibre7"/> O<span><span class="calibre68">NLINE</span></span> C<span><span class="calibre68">ONTENT</span></span></span></p>
+<p class="calibre9">Flashcards and crossword puzzles for key term practice are available at <em class="italic"><strong class="calibre14"><a href="http://www.cengagebrain.com">www.cengagebrain.com</a></strong></em>.</p>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14"><a id="filepos1245459"></a>REVIEW QUESTIONS</span></span></p><hr class="calibre10"/><p class="calibre81"><span class="calibre5">  1.  In a SELECT query, what is the difference between a WHERE clause and a HAVING clause?</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  2.  Explain why the following command would create an error and what changes could be made to fix the error: SELECT V_CODE, SUM(P_QOH) FROM PRODUCT;</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  3.  What type of integrity is enforced when a primary key is declared?</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  4.  Explain why it might be more appropriate to declare an attribute that contains only digits as a character data type instead of a numeric data type.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  5.  What is the difference between a column constraint and a table constraint?</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  6.  What are “referential constraint actions”?</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  7.  Rewrite the following WHERE clause without the use of the IN special operator: WHERE V_STATE IN ('TN', 'FL', 'GA')</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  8.  Explain the difference between an ORDER BY clause and a GROUP BY clause.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  9.  Explain why the following two commands produce different results: SELECT DISTINCT COUNT (V_CODE) FROM PRODUCT; SELECT COUNT (DISTINCT V_CODE) FROM PRODUCT;</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">10.  What is the difference between the COUNT aggregate function and the SUM aggregate function?</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">11.  Explain why it would be preferable to use a DATE data type to store date data instead of a character data type.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">12.  What is a recursive join?</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre63"><span class="calibre35"><img alt="img" src="images/00023.jpg" class="calibre7"/> O<span><span class="calibre68">NLINE</span></span> C<span><span class="calibre68">ONTENT</span></span></span></p>
+<p class="calibre9"><a href="#filepos1250623">Problems 1</a>–<a href="#filepos1263181">25</a> are based on the <strong class="calibre14">Ch07_ConstructCo</strong> database at <em class="italic"><strong class="calibre14"><a href="http://www.cengagebrain.com">www.cengagebrain.com</a></strong></em>. This database is stored in Microsoft Access format. If you use another DBMS such as Oracle, SQL Server, MySQL, or DB2, use its import utilities to import the Access database contents. Oracle and SQL script files are available at <em class="italic"><strong class="calibre14"><a href="http://www.cengagebrain.com">www.cengagebrain.com</a></strong></em>.</p>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre80"><span class="calibre8"><span class="calibre14"><a id="filepos1248812"></a>PROBLEMS</span></span></p><hr class="calibre10"/><p class="calibre9">The Ch07_ConstructCo database stores data for a consulting company that tracks all charges to projects. The charges are based on the hours each employee works on each project. The structure and contents of the Ch07_ConstructCo database are shown in <a href="#filepos1249334">Figure P7.1</a>.</p>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1249334"></a><strong class="calibre14">FIGURE P7.1 The Ch07_ConstructCo database</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00244.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre9">Note that the ASSIGNMENT table in <a href="#filepos1249334">Figure P7.1</a> stores the JOB_CHG_HOUR values as an attribute (ASSIGN_CHG_HR) to maintain historical accuracy of the data. The JOB_CHG_HOUR values are likely to change over time. In fact, a JOB_CHG_HOUR change will be reflected in the ASSIGNMENT table. Naturally, the employee primary job assignment might also change, so the ASSIGN_JOB is also stored. Because those attributes are required to maintain the historical accuracy of the data, they are <em class="italic">not</em> redundant.</p>
+<p class="calibre9">Given the structure and contents of the Ch07_ConstructCo database shown in <a href="#filepos1249334">Figure P7.1</a>, use SQL commands to answer <a href="#filepos1250623">Problems 1</a>–<a href="#filepos1263181">25</a>.</p>
+<p class="calibre79"><span class="calibre5">  <a id="filepos1250623"></a>1.  Write the SQL code that will create the table structure for a table named EMP_1. This table is a subset of the EMPLOYEE table. The basic EMP_1 table structure is summarized in the following table. (Note that the JOB_CODE is the FK to JOB.)</span></p><div class="calibre3"> </div>
+<div class="calibre58"> </div><table class="calibre59"><div class="calibre5">
+<tr class="calibre61"><td class="calibre62"><p class="calibre63"><span class="calibre14">ATTRIBUTE (FIELD) NAME</span></p></td><td class="calibre62"><p class="calibre63"><span class="calibre14">DATA DECLARATION</span></p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">EMP_NUM</p></td><td class="calibre62"><p class="calibre63">CHAR(3)</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">EMP_LNAME</p></td><td class="calibre62"><p class="calibre63">VARCHAR(15)</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">EMP_FNAME</p></td><td class="calibre62"><p class="calibre63">VARCHAR(15)</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">EMP_INITIAL</p></td><td class="calibre62"><p class="calibre63"> CHAR(1)</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">EMP_HIREDATE</p></td><td class="calibre62"><p class="calibre63">DATE</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">JOB_CODE</p></td><td class="calibre62"><p class="calibre63">CHAR(3)</p></td></tr></div></table><div class="calibre64"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5">  <a></a>2.  Having created the table structure in <a href="#filepos1250623">Problem 1</a>, write the SQL code to enter the first two rows for the table shown in <a href="#filepos1252472">Figure P7.2</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1252472"></a> FIGURE P7.2 The contents of the EMP_1 table</span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00245.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5">  <a></a>3.  Assuming that the data shown in the EMP_1 table have been entered, write the SQL code that will list all attributes for a job code of 502.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  <a></a>4.  Write the SQL code that will save the changes made to the EMP_1 table.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  <a id="filepos1253285"></a>5.  Write the SQL code to change the job code to 501 for the person whose employee number (EMP_NUM) is 107. After you have completed the task, examine the results and then reset the job code to its original value.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  <a id="filepos1253599"></a>6.  Write the SQL code to delete the row for William Smithfield, who was hired on June 22, 2004, and whose job code is 500. (<em class="italic">Hint:</em> Use logical operators to include all of the information given in this problem.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  <a></a>7.  Write the SQL code that will restore the data to its original status; that is, the table should contain the data that existed before you made the changes in <a href="#filepos1253285">Problems 5</a> and <a href="#filepos1253599">6</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5">  <a id="filepos1254252"></a>8.  Write the SQL code to create a copy of EMP_1, naming the copy EMP_2. Then write the SQL code that will add the attributes EMP_PCT and PROJ_NUM to the structure. The EMP_PCT is the bonus percentage to be paid to each employee. The new attribute characteristics are:</span></p><div class="calibre3"> </div>
+<div class="calibre58"> </div><table class="calibre59"><span class="calibre5">
+<tr class="calibre61"><td class="calibre62">          EMP_PCT</td><td class="calibre62">NUMBER(4,2)</td></tr><tr class="calibre61"><td class="calibre62">          PROJ_NUM</td><td class="calibre62">CHAR(3)</td></tr></span></table><div class="calibre64"> </div>
+<hr class="calibre10"/><p class="calibre9">          (<em class="italic">Note:</em> If your SQL implementation allows it, you may use DECIMAL(4,2) rather than NUMBER(4,2).)</p>
+<p class="calibre79"><span class="calibre5">  <a></a>9.  Write the SQL code to change the EMP_PCT value to 3.85 for the person whose employee number (EMP_NUM) is 103. Next, write the SQL command sequences to change the EMP_PCT values, as shown in <a href="#filepos1255383">Figure P7.9</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1255383"></a><strong class="calibre14">FIGURE P7.9 The EMP_2 table after the modifications</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00246.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1255800"></a>10.  Using a single command sequence, write the SQL code that will change the project number (PROJ_NUM) to 18 for all employees whose job classification (JOB_CODE) is 500.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1256070"></a>11.  Using a single command sequence, write the SQL code that will change the project number (PROJ_NUM) to 25 for all employees whose job classification (JOB_CODE) is 502 or higher. When you finish <a href="#filepos1255800">Problems 10</a> and <a href="#filepos1256070">11</a>, the EMP_2 table will contain the data shown in <a href="#filepos1256646">Figure P7.11</a>.   (You may assume that the table has been saved again at this point.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1256646"></a><strong class="calibre14">FIGURE P7.11 The EMP_2 table contents after the modifications</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00247.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>12.  Write the SQL code that will change the PROJ_NUM to 14 for employees who were hired before January 1, 1994, and whose job code is at least 501. (You may assume that the table will be restored to its condition preceding this question.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>13.  Write the two SQL command sequences required to:</span></p><div class="calibre3"> </div>
+<blockquote class="calibre38"><p class="calibre82"><span class="calibre5">a.   Create a temporary table named TEMP_1 whose structure is composed of the EMP_2 attributes EMP_NUM and EMP_PCT.</span></p></blockquote><div class="calibre3"> </div>
+<blockquote class="calibre38"><p class="calibre82"><span class="calibre5">b.   Copy the matching EMP_2 values into the TEMP_1 table.</span></p></blockquote><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>14.  Write the SQL command that will delete the newly created TEMP_1 table from the database.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>15.  Write the SQL code required to list all employees whose last names start with <em class="italic">Smith</em>. In other words, the rows for both Smith and Smithfield should be included in the listing. Assume case sensitivity.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1258496"></a>16.  Using the EMPLOYEE, JOB, and PROJECT tables in the Ch07_ConstructCo database (see <a href="#filepos1249334">Figure P7.1</a>), write the SQL code that will produce the results shown in <a href="#filepos1258869">Figure P7.16</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1258869"></a><strong class="calibre14">FIGURE P7.16 The query results for <a href="#filepos1258496">Problem 16</a></strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00248.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>17.  Write the SQL code that will produce a virtual table named REP_1. The virtual table should contain the same information that was shown in <a href="#filepos1258496">Problem 16</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>18.  Write the SQL code to find the average bonus percentage in the EMP_2 table you created in <a href="#filepos1254252">Problem 8</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>19.  Write the SQL code that will produce a listing for the data in the EMP_2 table in ascending order by the bonus percentage.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>20.  Write the SQL code that will list only the distinct project numbers in the EMP_2 table.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>21.  Write the SQL code to calculate the ASSIGN_CHARGE values in the ASSIGNMENT table in the Ch07_ConstructCo database. (See <a href="#filepos1249334">Figure P7.1</a>.) Note that ASSIGN_CHARGE is a derived attribute that is calculated by multiplying ASSIGN_CHG_HR by ASSIGN_HOURS.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>22.  Using the data in the ASSIGNMENT table, write the SQL code that will yield the total number of hours worked for each employee and the total charges stemming from those hours worked. The results of running that query are shown in <a href="#filepos1261032">Figure P7.22</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1261032"></a><strong class="calibre14">FIGURE P7.22 Total hours and charges by employee</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00249.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>23.  Write a query to produce the total number of hours and charges for each of the projects represented in the ASSIGNMENT table. The output is shown in <a href="#filepos1261786">Figure P7.23</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1261786"></a><strong class="calibre14">FIGURE P7.23 Total hours and charges by project</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00250.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>24.  Write the SQL code to generate the total hours worked and the total charges made by all employees. The results are shown in Figure <a href="#filepos1262764">P7.24</a>. <em class="italic">(Hint:</em> This is a nested query.  If you use Microsoft Access, you can use the output shown in <a href="#filepos1261032">Figure P7.22</a> as the basis for the query that will produce the output shown in <a href="#filepos1262764">Figure P7.24</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1262764"></a><strong class="calibre14">FIGURE P7.24 Total hours and charges, all employees</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00251.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1263181"></a>25.  Write the SQL code to generate the total hours worked and the total charges made to all projects. The results should be the same as those shown in Figure <a href="#filepos1262764">P7.24</a>. (<em class="italic">Hint:</em> This is a nested query.  If you use Microsoft Access, you can use the output shown in <a href="#filepos1261786">Figure P7.23</a> as the basis for this query.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<p class="calibre79"><span class="calibre5">         The structure and contents of the Ch07_SaleCo database are shown in <a href="#filepos1265664">Figure P7.26</a>.   Use this database to answer the following problems. Save each query as Q<em class="italic">XX</em>, where <em class="italic">XX</em> is the problem number.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre63"><span class="calibre35"><img alt="img" src="images/00023.jpg" class="calibre7"/> O<span><span class="calibre68">NLINE</span></span> C<span><span class="calibre68">ONTENT</span></span></span></p>
+<p class="calibre9"><a href="#filepos1264920">Problems 26</a>–<a href="#filepos1278304">43</a> are based on the <strong class="calibre14">Ch07_SaleCo</strong> database, which is available at <em class="italic"><strong class="calibre14"><a href="http://www.cengagebrain.com">www.cengagebrain.com</a></strong></em>.   This database is stored in Microsoft Access format. If you use another DBMS such as Oracle, SQL Server, MySQL, or DB2, use its import utilities to import the Access database contents. Oracle and SQL script files are available at <em class="italic"><strong class="calibre14"><a href="http://www.cengagebrain.com">www.cengagebrain.com</a></strong></em>.</p><hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1264920"></a>26.  Write a query to count the number of invoices.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>27.  Write a query to count the number of customers with a balance of more than $500.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1265254"></a>28.  Generate a listing of all purchases made by the customers, using the output shown in <a href="#filepos1266115">Figure P7.28</a> as your guide. (<em class="italic">Hint:</em> Use the ORDER BY clause to order the resulting rows shown in <a href="#filepos1266115">Figure P7.28</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1265664"></a><strong class="calibre14">FIGURE P7.26 The Ch07_SaleCo database</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00252.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1266115"></a><strong class="calibre14">FIGURE P7.28 List of customer purchases</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00253.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1266520"></a>29.  Using the output shown in <a href="#filepos1267093">Figure P7.29</a> as your guide, generate a list of customer purchases, including the subtotals for each of the invoice line numbers. <em class="italic">(Hint:</em> Modify the query format used to produce the list of customer purchases in <a href="#filepos1265254">Problem 28</a>, delete the INV_DATE column, and add the derived attribute LINE_UNITS * LINE_PRICE to calculate the subtotals.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1267093"></a><strong class="calibre14">FIGURE P7.29 Summary of customer purchases with subtotals</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00254.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1267516"></a>30.  Modify the query used in <a href="#filepos1266520">Problem 29</a> to produce the summary shown in <a href="#filepos1268412">Figure P7.30</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1267755"></a>31.  Modify the query in <a href="#filepos1267516">Problem 30</a> to include the number of individual product purchases made by each customer. (In other words, if the customer’s invoice is based on three products, one per LINE_NUMBER, you count three product purchases. Note that in the original invoice data, customer 10011 generated three invoices, which contained a total of six lines, each representing a product purchase.) Your output values must match those shown in <a href="#filepos1268864">Figure P7.31</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1268412"></a><strong class="calibre14">FIGURE P7.30 Customer purchase summary</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00255.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1268864"></a><strong class="calibre14">FIGURE P7.31 Customer total purchase amounts and number of purchases</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00256.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>32.  Use a query to compute the average purchase amount per product made by each customer. (<em class="italic">Hint:</em> Use the results of <a href="#filepos1267755">Problem 31</a> as the basis for this query.) Your output values must match those shown in <a href="#filepos1269845">Figure P7.32</a>.   Note that the average purchase amount is equal to the total purchases divided by the number of purchases per customer.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1269845"></a><strong class="calibre14">FIGURE P7.32 Average purchase amount by customer</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00257.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>33.  Create a query to produce the total purchase per invoice, generating the results shown in <a href="#filepos1270879">Figure P7.33</a>. The invoice total is the sum of the product purchases in the LINE that corresponds to the INVOICE.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1270592"></a>34.  Use a query to show the invoices and invoice totals in <a href="#filepos1271320">Figure P7.34</a>. (<em class="italic">Hint:</em> Group by the CUS_CODE.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1270879"></a><strong class="calibre14">FIGURE P7.33 Invoice totals</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00258.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1271320"></a><strong class="calibre14">FIGURE P7.34 Invoice totals by customer</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00259.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1271725"></a>35.  Write a query to produce the number of invoices and the total purchase amounts by customer, using the output shown in <a href="#filepos1272658">Figure P7.35</a> as your guide. (Compare this summary to the results shown in <a href="#filepos1270592">Problem 34</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>36.  Using the query results in <a href="#filepos1271725">Problem 35</a> as your basis, write a query to generate the total number of invoices, the invoice total for all of the invoices, the smallest invoice amount, the largest invoice amount, and the average of all the invoices. (<em class="italic">Hint:</em> Check the figure output in <a href="#filepos1271725">Problem 35</a>.) Your output must match <a href="#filepos1273142">Figure P7.36</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1272658"></a><strong class="calibre14">FIGURE P7.35 Number of invoices and total purchase amounts by customer</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00260.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1273142"></a><strong class="calibre14">FIGURE P7.36 Number of invoices, invoice totals, minimum, maximum, and average sales</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00261.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1273592"></a>37.  List the balances of customers who have made purchases during the current invoice cycle—that is, for the customers who appear in the INVOICE table. The results of this query are shown in <a href="#filepos1274263">Figure P7.37</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>38.  Using the results of the query created in <a href="#filepos1273592">Problem 37</a>, provide a summary of customer balance characteristics, as shown in <a href="#filepos1274731">Figure P7.38</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1274263"></a><strong class="calibre14">FIGURE P7.37 Balances for customers who made purchases</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00262.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1274731"></a><strong class="calibre14">FIGURE P7.38 Balance summary of customers who made purchases</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00263.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>39.  Create a query to find the balance characteristics for all customers, including the total of the outstanding balances. The results of this query are shown in <a href="#filepos1275780">Figure P7.39</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>40.  Find the listing of customers who did not make purchases during the invoicing period. Your output must match the output shown in <a href="#filepos1276240">Figure P7.40</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1275780"></a><strong class="calibre14">FIGURE P7.39 Balance summary for all customers</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00264.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1276240"></a><strong class="calibre14">FIGURE P7.40 Balances of customers who did not make purchases</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00265.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>41.  Find the customer balance summary for all customers who have not made purchases during the current invoicing period. The results are shown in <a href="#filepos1277001">Figure P7.41</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1277001"></a><strong class="calibre14">FIGURE P7.41 Summary of customer balances for customers who did not make purchases</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00266.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1277449"></a>42.  Create a query that summarizes the value of products currently in inventory. Note that the value of each product is a result of multiplying the units currently in inventory by the unit price. Use the ORDER BY clause to match the order shown in <a href="#filepos1277885">Figure P7.42</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1277885"></a><strong class="calibre14">FIGURE P7.42 Value of products currently in inventory</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00267.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1278304"></a>43.  Using the results of the query created in <a href="#filepos1277449">Problem 42</a>, find the total value of the product inventory. The results are shown in <a href="#filepos1278649">Figure P7.43</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1278649"></a><strong class="calibre14">FIGURE P7.43 Total value of all products in inventory</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00268.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5">       The Ch07_LargeCo database stores data for a company that resells paints.   The company tracks the sale of products to customers. The database keeps data on customers (LGCUSTOMER), sales (LGINVOICE), products (LGPRODUCT), which products are on which invoices (LGLINE), employees (LGEMPLOYEE), the salary history of each employee (LGSALARY_HISTORY), departments (LGDEPARTMENT), product brands (LGBRAND), vendors (LGVENDOR), and which vendors supply each product (LGSUPPLIES), as shown in <a href="#filepos1280067">Figure P7.44</a>. Some of the tables contain only a few rows of data, while other tables are quite large; for example, there are only eight departments, but more than 3,300 invoices containing over 11,000 invoice lines. <em class="italic">For Problems</em> 45–64, if the output of the query is very large, only the first several rows of the output are shown.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1280067"></a><strong class="calibre14">FIGURE P7.44 The Ch07_LargeCo ERD</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00269.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>44.  Write a query to display the eight departments in the LGDEPARTMENT table.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>45.  Write a query to display the SKU (stock keeping unit), description, type, base, category, and price for all products that have a PROD_BASE of water and a PROD_CATEGORY of sealer.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.45 Water-based sealers</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00270.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>46.  Write a query to display the first name, last name, and e-mail address of employees hired from January 1, 2001, to December 31, 2010. Sort the output by last name and then by first name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.46 Employees hired from 2001–2010</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00271.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>47.  Write a query to display the first name, last name, phone number, title, and department number of employees who work in department 300 or have the title “CLERK I.” Sort the output by last name and then by first name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.47 Clerks and employees in department 300</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00272.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>48.  Write a query to display the employee number, last name, first name, salary “from” date, salary end date, and salary amount for employees 83731, 83745, and 84039. Sort the output by employee number and salary “from” date.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.48 Salary history for selected employees</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00273.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>49.  Write a query to display the first name, last name, street, city, state, and zip code of any customer who purchased a Foresters Best brand top coat between July 15, 2011, and July 31, 2011. If a customer purchased more than one such product, display the customer’s information only once in the output. Sort the output by state, last name, and then first name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.49 Customers who purchased Foresters Best top coat</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00274.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>50.  Write a query to display the employee number, last name, e-mail address, title, and department name of each employee whose job title ends in the word “ASSOCIATE.” Sort the output by department name and employee title.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.50 Employees with the title of Associate</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00275.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>51.  Write a query to display a brand name and the number of products of that brand that are in the database. Sort the output by the brand name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.51 Number of products of each brand</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00276.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>52.  Write a query to display the number of products in each category that have a water base.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.52 Number of water-based products in each category</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00277.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>53.  Write a query to display the number of products within each base and type combination.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.53 Number of products of each base and type</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00278.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>54.  Write a query to display the total inventory—that is, the sum of all products on hand for each brand ID. Sort the output by brand ID in descending order.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.54 Total inventory of each brand of products</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00279.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>55.  Write a query to display the brand ID, brand name, and average price of products of each brand. Sort the output by brand name. (Results are shown with the average price rounded to two decimal places.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.55 Average price of products of each brand</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00280.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>56.  Write a query to display the department number and most recent employee hire date for each department. Sort the output by department number.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.56 Most recent hire in each department</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00281.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>57.  Write a query to display the employee number, first name, last name, and largest salary amount for each employee in department 200. Sort the output by largest salary in descending order.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.57 Largest salary amount for each employee in department 200</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00282.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>58.  Write a query to display the customer code, first name, last name, and sum of all invoice totals for customers with cumulative invoice totals greater than $1,500. Sort the output by the sum of invoice totals in descending order.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.58 List of customers with cumulative purchases of more than $1,500</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00283.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>59.  Write a query to display the department number, department name, department phone number, employee number, and last name of each department manager. Sort the output by department name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.59 Department managers</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00284.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>60.  Write a query to display the vendor ID, vendor name, brand name, and number of products of each brand supplied by each vendor. Sort the output by vendor name and then by brand name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.60 Number of products of each brand supplied by each vendor</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00285.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>61.  Write a query to display the employee number, last name, first name, and sum of invoice totals for all employees who completed an invoice. Sort the output by employee last name and then by first name.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.61 Total value of invoices completed by each employee</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00286.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>62.  Write a query to display the largest average product price of any brand.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.62 Largest average brand price</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00287.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>63.  Write a query to display the brand ID, brand name, brand type, and average price of products for the brand that has the largest average product price.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.63 Brand with highest average price</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00288.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>64.  Write a query to display the manager name, department name, department phone number, employee name, customer name, invoice date, and invoice total for the department manager of the employee who made a sale to a customer whose last name is Hagan on May 18, 2011. For all person names, concatenate the first and last names into a single field.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a></a><strong class="calibre14">FIGURE P7.64 Manager of employee making a sale to customer Hagan</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00289.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><hr class="calibre10"/><p class="calibre80"><span class="calibre8"><span class="calibre14"><a id="filepos1295791"></a>CASES</span></span></p><hr class="calibre10"/><p class="calibre9">TinyVideo is a small movie rental company with a single store.   It needs a database system to track the rental of movies to its members. TinyVideo can own several copies (VIDEO) of each movie (MOVIE). For example, the store may have 10 copies of the movie <em class="italic">Twist in the Wind</em>.   In the database, <em class="italic">Twist in the Wind</em> would be one MOVIE, and each copy would be a VIDEO.   A rental transaction (RENTAL) involves one or more videos being rented to a member (MEMBERSHIP). A video can be rented many times over its lifetime; therefore, there is an M:N relationship between RENTAL and VIDEO. DETAILRENTAL is the bridge table to resolve this relationship. The complete ERD is provided in <a href="#filepos1297214">Figure P7.65</a>.</p>
+<p class="calibre79"><span class="calibre5"><a id="filepos1296709"></a>65.   Write the SQL code to create the table structures for the entities shown in <a href="#filepos1297214">Figure P7.65</a>. The structures should contain the attributes specified in the ERD. Use data types that are appropriate for the data that will need to be stored in each attribute. Enforce primary key and foreign key constraints as indicated by the ERD.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1297214"></a><strong class="calibre14">FIGURE P7.65 The Ch07_MovieCo ERD</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00290.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a id="filepos1297613"></a>66.  The following tables provide a very small portion of the data that will be kept in the database. These data need to be inserted into the database for testing purposes. Write the INSERT commands necessary to place the following data in the tables that were created in <a href="#filepos1296709">Problem 65</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre11"><img alt="img" src="images/00291.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<div class="calibre58"> </div><table class="calibre59"><div class="calibre5">
+<tr class="calibre61"><td class="calibre62"><p class="calibre63"><span class="calibre14">RENTAL</span></p></td><td class="calibre62"><p class="calibre63"></p></td><td class="calibre62"><p class="calibre63"></p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63"><span class="calibre14">RENT_NUM</span></p></td><td class="calibre62"><p class="calibre63"><span class="calibre14">RENT_DATE</span></p></td><td class="calibre62"><p class="calibre63"><span class="calibre14">MEM_NUM</span></p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1001</p></td><td class="calibre62"><p class="calibre63">01-MAR-11</p></td><td class="calibre62"><p class="calibre63">103</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1002</p></td><td class="calibre62"><p class="calibre63">01-MAR-11</p></td><td class="calibre62"><p class="calibre63">105</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1003</p></td><td class="calibre62"><p class="calibre63">02-MAR-11</p></td><td class="calibre62"><p class="calibre63">102</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1004</p></td><td class="calibre62"><p class="calibre63">02-MAR-11</p></td><td class="calibre62"><p class="calibre63">110</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1005</p></td><td class="calibre62"><p class="calibre63">02-MAR-11</p></td><td class="calibre62"><p class="calibre63">111</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1006</p></td><td class="calibre62"><p class="calibre63">02-MAR-11</p></td><td class="calibre62"><p class="calibre63">107</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1007</p></td><td class="calibre62"><p class="calibre63">02-MAR-11</p></td><td class="calibre62"><p class="calibre63">104</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1008</p></td><td class="calibre62"><p class="calibre63">03-MAR-11</p></td><td class="calibre62"><p class="calibre63">105</p></td></tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">1009</p></td><td class="calibre62"><p class="calibre63">03-MAR-11</p></td><td class="calibre62"><p class="calibre63">111</p></td></tr></div></table><div class="calibre64"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00292.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<div class="calibre58"> </div><table class="calibre59"><div class="calibre5">
+<tr class="calibre61"><td class="calibre62"><p class="calibre63"><strong class="calibre14">VIDEO</strong></p></td>
+<td class="calibre62"><p class="calibre63"></p></td>
+<td class="calibre62"><p class="calibre63"></p></td>
+<td class="calibre62"><p class="calibre63"></p></td>
+<td class="calibre62"><p class="calibre63"></p></td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63"><strong class="calibre14">VID_NUM</strong></p></td>
+<td class="calibre62"><p class="calibre63"><strong class="calibre14">VID_INDATE</strong></p></td>
+<td colspan="2" class="calibre62"><strong class="calibre14">MOVIE_NUM</strong></td>
+<td class="calibre62"><p class="calibre63"></p></td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">54321</p></td>
+<td class="calibre62"><p class="calibre63">18-JUN-10</p></td>
+<td colspan="3" class="calibre62">1234</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">54324</p></td>
+<td class="calibre62"><p class="calibre63">18-JUN-10</p></td>
+<td colspan="3" class="calibre62">1234</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">54325</p></td>
+<td class="calibre62"><p class="calibre63">18-JUN-10</p></td>
+<td colspan="3" class="calibre62">1234</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">34341</p></td>
+<td class="calibre62"><p class="calibre63">22-JAN-09</p></td>
+<td colspan="3" class="calibre62">1235</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">34342</p></td>
+<td class="calibre62"><p class="calibre63">22-JAN-09</p></td>
+<td colspan="3" class="calibre62">1235</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">34366</p></td>
+<td class="calibre62"><p class="calibre63">02-MAR-11</p></td>
+<td colspan="3" class="calibre62">1236</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">34367</p></td>
+<td class="calibre62"><p class="calibre63">02-MAR-11</p></td>
+<td colspan="3" class="calibre62">1236</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">34368</p></td>
+<td class="calibre62"><p class="calibre63">02-MAR-11</p></td>
+<td colspan="3" class="calibre62">1236</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">34369</p></td>
+<td class="calibre62"><p class="calibre63">02-MAR-11</p></td>
+<td colspan="3" class="calibre62">1236</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">44392</p></td>
+<td class="calibre62"><p class="calibre63">21-OCT-10</p></td>
+<td colspan="3" class="calibre62">1237</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">44397</p></td>
+<td class="calibre62"><p class="calibre63">21-OCT-10</p></td>
+<td colspan="3" class="calibre62">1237</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">59237</p></td>
+<td class="calibre62"><p class="calibre63">14-FEB-11</p></td>
+<td colspan="3" class="calibre62">1237</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">61388</p></td>
+<td class="calibre62"><p class="calibre63">25-JAN-09</p></td>
+<td colspan="3" class="calibre62">1239</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">61353</p></td>
+<td class="calibre62"><p class="calibre63">28-JAN-08</p></td>
+<td colspan="3" class="calibre62">1245</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">61354</p></td>
+<td class="calibre62"><p class="calibre63">28-JAN-08</p></td>
+<td colspan="3" class="calibre62">1245</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">61367</p></td>
+<td class="calibre62"><p class="calibre63">30-JUL-10</p></td>
+<td colspan="3" class="calibre62">1246</td>
+</tr><tr class="calibre61"><td class="calibre62"><p class="calibre63">61369</p></td>
+<td class="calibre62"><p class="calibre63">30-JUL-10</p></td>
+<td colspan="3" class="calibre62">1246</td>
+</tr></div></table><div class="calibre64"> </div>
+<p class="calibre11"><img alt="img" src="images/00293.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre11"><img alt="img" src="images/00294.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre79"><span class="calibre5">For Questions 67–98, use the tables that were created in <a href="#filepos1296709">Problem 65</a> and the data that were loaded into those tables in <a href="#filepos1297613">Problem 66</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1304821"></a>67.  Write the SQL command to save the rows inserted in <a href="#filepos1297613">Problem 66</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>68.  Write the SQL command to change the movie year for movie number 1245 to 2008.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>69.  Write the SQL command to change the price code for all action movies to price code 3.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a id="filepos1305384"></a>70.  Write a single SQL command to increase all price rental fee values by $0.50.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>71.  Write the SQL command to save the changes made to the PRICE and MOVIE tables in <a href="#filepos1304821">Problems 67</a>–<a href="#filepos1305384">70</a>.</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>72.  Write a query to display the movie title, movie year, and movie genre for all movies. (The results are shown in <a href="#filepos1306122">Figure P7.72</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1306122"></a><strong class="calibre14">FIGURE P7.72 All movies</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00295.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>73.  Write a query to display the movie year, movie title, and movie cost sorted by movie year in descending order. (The results are shown in <a href="#filepos1306841">Figure P7.73</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1306841"></a><strong class="calibre14">FIGURE P7.73 Movies by year</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00296.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>74.  Write a query to display the movie title, movie year, and movie genre for all movies sorted by movie genre in ascending order, then sorted by movie year in descending order within genre. (The results are shown in <a href="#filepos1307640">Figure P7.74</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1307640"></a><strong class="calibre14">FIGURE P7.74 Movies with multicolumn sort</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00297.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>75.  Write a query to display the movie number, movie title, and price code for all movies with a title that starts with the letter <em class="italic">R</em>. (The results are shown in <a href="#filepos1308405">Figure P7.75</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1308405"></a><strong class="calibre14">FIGURE P7.75 Movie titles starting with <em class="italic">R</em></strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00298.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>76.  Write a query to display the movie title, movie year, and movie cost for all movies that contain the word <em class="italic">hope</em> in the title.    Sort the results in ascending order by title. (The results are shown in <a href="#filepos1309223">Figure P7.76</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1309223"></a><strong class="calibre14">FIGURE P7.76 Movies with <em class="italic">hope</em> in the title</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00299.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>77.  Write a query to display the movie title, movie year, and movie genre for all action movies. (The results are shown in <a href="#filepos1309952">Figure P7.77</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1309952"></a><strong class="calibre14">FIGURE P7.77 Action movies</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00300.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>78.  Write a query to display the movie number, movie title, and movie cost for all movies that cost more than $40. (The results are shown in <a href="#filepos1311032">Figure P7.78</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>79.  Write a query to display the movie number, movie title, movie cost, and movie genre for all action or comedy movies that cost less than $50. Sort the results in ascending order by genre. (The results are shown in <a href="#filepos1311489">Figure P7.79</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1311032"></a><strong class="calibre14">FIGURE P7.78 Movies that cost more than $40</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00301.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1311489"></a><strong class="calibre14">FIGURE P7.79 Action or comedy movies that cost less than $50</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00302.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>80.  Write a query to display the movie number and movie description for all movies, where the movie description is a combination of the movie title, movie year, and movie genre, with the movie year enclosed in parentheses. (The results are shown in <a href="#filepos1312353">Figure P7.80</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1312353"></a><strong class="calibre14">FIGURE P7.80 Movies with concatenated descriptions</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00303.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<hr class="calibre10"/><p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>81.  Write a query to display the movie genre and the number of movies in each genre. (The results are shown in <a href="#filepos1313307">Figure P7.81</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>82.  Write a query to display the average cost of all the movies. (The results are shown in <a href="#filepos1313759">Figure P7.82</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1313307"></a><strong class="calibre14">FIGURE P7.81 Number of movies in genre</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00304.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1313759"></a><strong class="calibre14">FIGURE P7.82 Average movie cost</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00305.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>83.  Write a query to display the movie genre and average cost of movies in each genre. (The results are shown in <a href="#filepos1314758">Figure P7.83</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>84.  Write a query to display the movie title, movie genre, price description, and price rental fee for all movies with a price code. (The results are shown in <a href="#filepos1315212">Figure P7.84</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1314758"></a><strong class="calibre14">FIGURE P7.83 Average movie cost by genre</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00306.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1315212"></a><strong class="calibre14">FIGURE P7.84 Rental fees for movies</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00307.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>85.  Write a query to display the movie genre and average rental fee for movies in each genre that have a price. (The results are shown in <a href="#filepos1315940">Figure P7.85</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1315940"></a><strong class="calibre14">FIGURE P7.85 Average rental fee by genre</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00308.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>86.  Write a query to display the movie title, movie year, and breakeven amount for each movie that has a price. The breakeven amount is the movie cost divided by the price rental fee for each movie that has a price; it determines the number of rentals needed to break even on the purchase of the movie. (The results are shown in <a href="#filepos1316864">Figure P7.86</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1316864"></a><strong class="calibre14">FIGURE P7.86 Breakeven rentals</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00309.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>87.  Write a query to display the movie title and movie year for all movies that have a price code. (The results are shown in <a href="#filepos1317574">Figure P7.87</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1317574"></a><strong class="calibre14">FIGURE P7.87 Movies with a price</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00310.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>88.  Write a query to display the movie title, movie year, and movie cost for all movies that cost between $44.99 and $49.99. (The results are shown in <a href="#filepos1318312">Figure P7.88</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1318312"></a><strong class="calibre14">FIGURE P7.88 Movie costs within a range</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00311.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>89.  Write a query to display the movie title, movie year, price description, and price rental fee for all movies that are in the genres of family, comedy, or drama. (The results are shown in <a href="#filepos1319097">Figure P7.89</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1319097"></a><strong class="calibre14">FIGURE P7.89 Movies with specific genres</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00312.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>90.  Write a query to display the movie number, movie title, and movie year for all movies that do not have a video. (The results are shown in <a href="#filepos1319834">Figure P7.90</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1319834"></a><strong class="calibre14">FIGURE P7.90 Movies without videos</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00313.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>91.  Write a query to display the membership number, first name, last name, and balance of the memberships that have a rental. (The results are shown in <a href="#filepos1320865">Figure P7.91</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre79"><span class="calibre5"><a></a>92.  Write a query to display the minimum balance, maximum balance, and average balance for memberships that have a rental. (The results are shown in <a href="#filepos1321333">Figure P7.92</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1320865"></a><strong class="calibre14">FIGURE P7.91 Balances of memberships with rentals</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00314.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1321333"></a><strong class="calibre14">FIGURE P7.92 Minimum, maximum, and average balances</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00315.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>93.  Write a query to display the membership name and membership address. The membership name is a concatenation of the first name and last name with a space added between them in a single column. The membership address is a concatenation of the street, city, state, and zip code into a single column with spaces. (The results are shown in <a href="#filepos1322278">Figure P7.93</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1322278"></a><strong class="calibre14">FIGURE P7.93 Concatenated membership data</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00316.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>94.  Write a query to display the rental number, rental date, video number, movie title, due date, and return date for all videos that were returned after the due date. Sort the results by rental number and movie title. (The results are shown in <a href="#filepos1323119">Figure P7.94</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1323119"></a><strong class="calibre14">FIGURE P7.94 Late video returns</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00317.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>95.  Write a query to display the rental number, rental date, video number, movie title, due date, return date, detail fee, and number of days past due for each video that was returned after the due date. Sort the results by rental number and movie title. (The results are shown in <a href="#filepos1323986">Figure P7.95</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1323986"></a><strong class="calibre14">FIGURE P7.95 Number of days late</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00318.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>96.  Write a query to display the rental number, rental date, movie title, and detail fee for each movie that was returned on or before the due date. (The results are shown in <a href="#filepos1324748">Figure P7.96</a>.)</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1324748"></a><strong class="calibre14">FIGURE P7.96 Actual rental fees charged</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00319.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>97.  Write a query to display the membership number, last name, first name, and total rental fees earned from that membership. (The results are shown in <a href="#filepos1325604">Figure P7.97</a>.) The total rental fee is the sum of all detail fees (without late fees) from all movies the member has rented.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1325604"></a><strong class="calibre14">FIGURE P7.97 Total rental fees paid by membership</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00320.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><p class="calibre79"><span class="calibre5"><a></a>98.  Write a query to display the movie number, movie genre, average cost of movies in that genre, cost of the individual movie, and the percentage difference between the average movie cost and the individual movie cost. The results are shown in <a href="#filepos1326897">Figure P7.98</a>. The percentage difference is the cost of the individual movie minus the average cost of movies in that genre, divided by the average cost of movies in that genre multiplied by 100. For example, if the average cost of movies in the family genre is $25 and a given family movie costs $26, then the calculation would be ((26 – 25) / 25 * 100), or 4.00 percent. In this case, the individual movie costs 4 percent more than the average family movie.</span></p><div class="calibre3"> </div>
+<p class="calibre48"> </p>
+<hr class="calibre10"/><p class="calibre69"><span class="calibre8"><span class="calibre14"><a id="filepos1326897"></a><strong class="calibre14">FIGURE P7.98 Movie differences from genre average</strong></span></span></p><div class="calibre58"> </div>
+<hr class="calibre10"/><p class="calibre11"><img alt="img" src="images/00321.jpg" class="calibre7"/></p><div class="calibre32"> </div>
+<p class="calibre73"><span class="calibre8">SOURCE: Course Technology/Cengage Learning</span></p><div class="calibre13"> </div>
+<hr class="calibre10"/><div class="mbppagebreak" id="calibre_pb_21"></div></body></html>

@@ -1,0 +1,1763 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Database Systems: Design, Implementation, and Management, Tenth Edition</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+<link href="page_styles.css" type="text/css" rel="stylesheet"/>
+</head>
+  <body class="calibre">
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">LAST_DAY function (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">latency (in distributed database systems). <em class="italic">See</em> network latency (data contention)</span></p>
+<p class="calibre95"><span class="calibre8">left angle bracket + double dashes (<img alt="img" src="images/00572.jpg" class="calibre7"/>): comment indicator (in XML)</span></p>
+<p class="calibre95"><span class="calibre8">left outer joint</span></p>
+<p class="calibre95"><span class="calibre8">legacy systems integration: XML and</span></p>
+<p class="calibre95"><span class="calibre8">LEN function (SQL Server)</span></p>
+<p class="calibre95"><span class="calibre8">LENGTH function (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">life span of information systems</span></p>
+<p class="calibre95"><span class="calibre8">LIKE special operator</span></p>
+<p class="calibre95"><span class="calibre8">limiting groups of data</span></p>
+<p class="calibre95"><span class="calibre8">line numbers: in Oracle</span></p>
+<p class="calibre95"><span class="calibre8">linking tables (in M:N to 1:M conversions)</span></p>
+<p class="calibre95"><span class="calibre8">links between tables</span></p>
+<p class="calibre95"><span class="calibre8">list-of-value subqueries</span></p>
+<p class="calibre95"><span class="calibre8">listener process</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Oracle service</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">listing rows</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">based on subquery results</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with conditional restrictions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">grouping aggregate function outputs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">limiting/restricting groups</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with matching values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with maximum/minimum values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with nulls</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">from two tables or more. <em class="italic">See</em> combining tables/sets</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with unique values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">using computed columns and column aliases</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with values within ranges</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">listings: ordering (sorting)</span></p>
+<p class="calibre95"><span class="calibre8">loading data into 1:M relationships</span></p>
+<p class="calibre95"><span class="calibre8">loading data into databases</span></p>
+<p class="calibre95"><span class="calibre8">local mapping transparency level (of distribution transparency)</span></p>
+<p class="calibre95"><span class="calibre8">location dimension (of facts)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attribute hierarchy</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">location transparency level (of distribution transparency)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">query format</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">lock granularity (use levels)</span></p>
+<p class="calibre95"><span class="calibre8">lock manager</span></p>
+<p class="calibre95"><span class="calibre8">locks (on data items)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">granularity (use levels)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mutual exclusive rule for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">types</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">logical conditional expressions</span></p>
+<p class="calibre95"><span class="calibre8">logical data</span></p>
+<p class="calibre95"><span class="calibre8">logical data forma</span></p>
+<p class="calibre95"><span class="calibre8">logical design</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DBLC stage. <em class="italic">See</em> logical design stage and physical design</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">logical design stage (DBLC database design phase)</span></p>
+<p class="calibre95"><span class="calibre8">logical independence</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Codd’s rule on</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">logical model</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mapping the conceptual model to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">validating</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">logical operators</span></p>
+<p class="calibre95"><span class="calibre8">looping procedures</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in PL/SQL blocks</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">programming language extensions for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> correlated subqueries</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">lost updates (concurrent transactions problem)</span></p>
+<p class="calibre95"><span class="calibre8">LOWER function</span></p>
+<p class="calibre95"><span class="calibre8">lowercase: converting strings to</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">M</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">M:M relationships. <em class="italic">See</em> M:N (many-to-many) relationships</span></p>
+<p class="calibre95"><span class="calibre8">M:N (many-to-many) relationships</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ERDs of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">implementing: with 1:M relationships, as not to be done</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as recursive relationships</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">maintenance and evolution phase (DBLC)</span></p>
+<p class="calibre95"><span class="calibre8">maintenance phase (SDLC)</span></p>
+<p class="calibre95"><span class="calibre8">management approval: and systems design</span></p>
+<p class="calibre95"><span class="calibre8">managerial aspect of DBMS introductions</span></p>
+<p class="calibre95"><span class="calibre8">managers</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">business managers’ view of data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data managers (DMs)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> DA (data administrator); DBAs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(database administrators)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">mandatory participation (in relationships)</span></p>
+<p class="calibre95"><span class="calibre8">mantra on database performance</span></p>
+<p class="calibre95"><span class="calibre8">manual file systems</span></p>
+<p class="calibre95"><span class="calibre8">manual query optimization</span></p>
+<p class="calibre95"><span class="calibre8">manual statistical generation mode</span></p>
+<p class="calibre95"><span class="calibre8">many-to-many relationships. <em class="italic">See</em> M:N (many-to-many) relationships</span></p>
+<p class="calibre95"><span class="calibre8">mapping the conceptual model to the logical model</span></p>
+<p class="calibre95"><span class="calibre8">Martin, James: seven essentials of database security</span></p>
+<p class="calibre95"><span class="calibre8">master data management (MDM)</span></p>
+<p class="calibre95"><span class="calibre8">master tables. <em class="italic">See</em> base tables</span></p>
+<p class="calibre95"><span class="calibre8">matching values: listing rows with matching attribute values</span></p>
+<p class="calibre95"><span class="calibre8">materialized views updating of</span></p>
+<p class="calibre95"><span class="calibre8">mathematical symbols: naming convention against</span></p>
+<p class="calibre95"><span class="calibre8">MAX function</span></p>
+<p class="calibre95"><span class="calibre8">MDBMSs (multidimensional database management systems)</span></p>
+<p class="calibre95"><span class="calibre8">MDM (master data management)</span></p>
+<p class="calibre95"><span class="calibre8">Mediterranean Shipping Company: application database (MSCLink)</span></p>
+<p class="calibre95"><span class="calibre8">memory</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">file changes as done in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">virtual memory</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">merge operation</span></p>
+<p class="calibre95"><span class="calibre8">messages: displaying (in SQL*Plus)</span></p>
+<p class="calibre95"><span class="calibre8">metadata (data definitions)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Codd’s rule on</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in the data dictionary</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in data warehouses</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DTDs (in XML)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in the system catalog</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">metadictionaries for databases</span></p>
+<p class="calibre95"><span class="calibre8">methods (OO data model)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">OLE-DB interfaces</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">metrics</span></p>
+<p class="calibre95"><span class="calibre8">Microsoft software. <em class="italic">See &lt;softwareName&gt;</em> (Microsoft)</span></p>
+<p class="calibre95"><span class="calibre8">MicroStrategy</span></p>
+<p class="calibre95"><span class="calibre8">middleware: database middleware</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> database connectivity interfaces;</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Web-to-database middleware</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">MIN function</span></p>
+<p class="calibre95"><span class="calibre8">minimal data rule</span></p>
+<p class="calibre95"><span class="calibre8">MINUS statement</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax alternative</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">mixed fragmentation</span></p>
+<p class="calibre95"><span class="calibre8">mobile business intelligence</span></p>
+<p class="calibre95"><span class="calibre8">mobile business intelligence system (Microstrategy)</span></p>
+<p class="calibre95"><span class="calibre8">mobile technologies</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and DDBMSs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and information dissemination</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">models. <em class="italic">See</em> data models</span></p>
+<p class="calibre95"><span class="calibre8">MODIFY option (ALTER TABLE command)</span></p>
+<p class="calibre95"><span class="calibre8">modular approach to ER modeling</span></p>
+<p class="calibre95"><span class="calibre8">modular approach to programming</span></p>
+<p class="calibre95"><span class="calibre8">module coupling</span></p>
+<p class="calibre95"><span class="calibre8">modules (ER model segments)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">cohesivity</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">MOLAP (multidimensional online analytical processing)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. ROLAP</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">MOLAP tools</span></p>
+<p class="calibre95"><span class="calibre8">monotonicity (of time stamp values)</span></p>
+<p class="calibre95"><span class="calibre8">MONTH function (Access/SQL Server)</span></p>
+<p class="calibre95"><span class="calibre8">MPMD scenario (multiple-site processing multiple-site data scenario)</span></p>
+<p class="calibre95"><span class="calibre8">MPSD scenario (multiple-site processing single-site data scenario)</span></p>
+<p class="calibre95"><span class="calibre8">MSCLink database</span></p>
+<p class="calibre95"><span class="calibre8">multidimensional data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">cubic representation of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">model. <em class="italic">See</em> star schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">storage of</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">multidimensional data analysis</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attribute hierarchies in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in data cubes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">OLAP techniques</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">query optimization for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLAP systems</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sparsity in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL extensions for: OLAP ROLAP</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">multidimensional data schemas: ROLAP support for</span></p>
+<p class="calibre95"><span class="calibre8">multidimensional database management systems (MDBMSs)</span></p>
+<p class="calibre95"><span class="calibre8">multidimensional databases: multidimensional</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data storage in</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">multidimensional online analytical processing. <em class="italic">See</em> MOLAP</span></p>
+<p class="calibre95"><span class="calibre8">multidimensional views of operational data</span></p>
+<p class="calibre95"><span class="calibre8">multiple conditional expressions: equality conditions in</span></p>
+<p class="calibre95"><span class="calibre8">multiple duplicate records problem</span></p>
+<p class="calibre95"><span class="calibre8">multiple entities and relationships (entity clusters)</span></p>
+<p class="calibre95"><span class="calibre8">multiple fact tables</span></p>
+<p class="calibre95"><span class="calibre8">multiple-site processing, multiple-site data (MPMD) scenario</span></p>
+<p class="calibre95"><span class="calibre8">multiple-site processing, single-site data (MPSD) scenario</span></p>
+<p class="calibre95"><span class="calibre8">multirow subquery operators</span></p>
+<p class="calibre95"><span class="calibre8">multiuser access control</span></p>
+<p class="calibre95"><span class="calibre8">multiuser databases</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">transaction controls</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">multivalued attributes</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">implementing</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">multivalued dependencies: eliminating problems caused by</span></p>
+<p class="calibre95"><span class="calibre8">mutual consistency rule (for replicated data)</span></p>
+<p class="calibre95"><span class="calibre8">mutual exclusive rule (for locks)</span></p>
+<p class="calibre95"><span class="calibre8">MySQL: features</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">N</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">names</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as character data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data source names (DSNs)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">length issue</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">naming conventions</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for attributes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">avoiding homonyms and synonyms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">checklist, InsideFrontCover(t)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for columns</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evaluating</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">NASDAQ: BI tool-based business problem solutions</span></p>
+<p class="calibre95"><span class="calibre8">native SQL database connectivity</span></p>
+<p class="calibre95"><span class="calibre8">natural disasters (external factors): system failures from</span></p>
+<p class="calibre95"><span class="calibre8">natural join</span></p>
+<p class="calibre95"><span class="calibre8">natural keys (natural identifiers)</span></p>
+<p class="calibre95"><span class="calibre8">Nealab: cloud computing</span></p>
+<p class="calibre95"><span class="calibre8">nested loop operation</span></p>
+<p class="calibre95"><span class="calibre8">nested queries</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> SELECT subqueries</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">.NET framework (Microsoft)</span></p>
+<p class="calibre95"><span class="calibre8">Netflix and AWS</span></p>
+<p class="calibre95"><span class="calibre8">network latency (data contention)</span></p>
+<p class="calibre95"><span class="calibre8">network model</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advantages and disadvantages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data storage</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">terminology</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">network partitioning</span></p>
+<p class="calibre95"><span class="calibre8">networks</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">of data. <em class="italic">See</em> clouds</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as query processing bottlenecks</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security vulnerabilities</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> social media/networks</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">:NEW attribute reference (in SQL*Plus)</span></p>
+<p class="calibre95"><span class="calibre8">NEXTVAL pseudo column (in Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">non-identifying relationships. <em class="italic">See</em> weak relationships</span></p>
+<p class="calibre95"><span class="calibre8">nonkey attributes (nonprime attributes)</span></p>
+<p class="calibre95"><span class="calibre8">non-null values: counting</span></p>
+<p class="calibre95"><span class="calibre8">non-overlapping subtypes. <em class="italic">See</em> disjoin</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">subtypes</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">nonprocedural languages</span></p>
+<p class="calibre95"><span class="calibre8">nonsubversion: Codd’s rule on</span></p>
+<p class="calibre95"><span class="calibre8">nonvolatile data in data warehouses</span></p>
+<p class="calibre95"><span class="calibre8">normal forms (of database tables)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conversion processes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">higher forms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">lower forms in data warehouses</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Boyce-Codd normal form (BCNF);</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">first normal form (1NF); fourth normal</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">form (4NF); second normal form (2NF);</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">third normal form (3NF)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">normalization (of database tables)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">basic example</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">common sense and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in database design improvements</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dimensional tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eliminating partial dependencies</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eliminating repeating groups</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eliminating transitive dependencies</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and ER modeling</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key terms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">need for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">objective</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in OLAP systems</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and performance requirements</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems (exercises)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">processes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">review questions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">stages. <em class="italic">See</em> normal forms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summary</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">validating the logical model using</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> denormalization (of database tables)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">NoSQL data models</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advantages and disadvantages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">NoSQL databases (Big Data databases) characteristics</span></p>
+<p class="calibre95"><span class="calibre8">NoSQL DDBMSs</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">CAP properties</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">“not a GROUP BY expression” error</span></p>
+<p class="calibre95"><span class="calibre8">NOT IN subqueries</span></p>
+<p class="calibre95"><span class="calibre8">NOT logical operator</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">avoiding the use of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax alternatives</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">NOT NULL constraint</span></p>
+<p class="calibre95"><span class="calibre8">%NOTFOUND cursor attribute (PL/SQL)</span></p>
+<p class="calibre95"><span class="calibre8">NULL comparisons: numeric comparisons as faster than</span></p>
+<p class="calibre95"><span class="calibre8">NULL subqueries</span></p>
+<p class="calibre95"><span class="calibre8">nulls</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">avoiding</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">checking for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Codd’s rule on</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">counting non-null values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting rows with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">IS NULL special operator</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">NOT NULL constraint</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ordering of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems from</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">from unique attributes</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">NUMBER data type (PL/SQL)</span></p>
+<p class="calibre95"><span class="calibre8">NUMBER data type (SQL)</span></p>
+<p class="calibre95"><span class="calibre8">number sign (#) (in Access): date delimiter</span></p>
+<p class="calibre95"><span class="calibre8">numbers</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as character data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting strings to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting to strings</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> numeric attributes</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">numeric attributes</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">averaging</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows with maximum/minimum values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows with values within ranges</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">returning absolute values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">rounding</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> attribute values; numbers</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">numeric comparisons</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as faster than character, date, and NULL comparisons</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as faster than nonnumeric comparisons</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">numeric data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in the data dictionary</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> numbers; numeric attributes</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">numeric functions</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> aggregate functions</span></p></blockquote>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">O</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">o (overlapping constraint). <em class="italic">See</em> overlapping subtypes</span></p>
+<p class="calibre95"><span class="calibre8">O/R DBMSs. <em class="italic">See</em> object/relational database management systems</span></p>
+<p class="calibre95"><span class="calibre8">Object Linking and Embedding for Database. <em class="italic">See</em> OLE-DB</span></p>
+<p class="calibre95"><span class="calibre8">object-oriented APIs</span></p>
+<p class="calibre95"><span class="calibre8">object-oriented data model (OODM)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advantages and disadvantages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">components</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">object representation</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">terminology</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> extended relational data model</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(ERDM)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">object-oriented database management systems (OO DBMSs)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. O/R DBMSs</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">object/relational database management systems (O/R DBMSs) vs. OO DBMSs</span></p>
+<p class="calibre95"><span class="calibre8">objectives definition process (DBLC database initial study phase)</span></p>
+<p class="calibre95"><span class="calibre8">objects</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ADO objects</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">COM objects</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> consumers; providers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database. <em class="italic">See</em> database objects</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">definition conflicts</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">entities as</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in the OO model</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">ODBC (Open Database Connectivity)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(Microsoft)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">ODBC API compliance/support levels</span></p>
+<p class="calibre95"><span class="calibre8">ODBC Driver Manager</span></p>
+<p class="calibre95"><span class="calibre8">ODBC driver parameters</span></p>
+<p class="calibre95"><span class="calibre8">ODBC drivers</span></p>
+<p class="calibre95"><span class="calibre8">OLAP (online analytical processing)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">functions, advanced</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional (MOLAP), vs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLAP</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional data analysis techniques</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">relational. <em class="italic">See</em> ROLAP</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL extensions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tools</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> OLAP systems</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">OLAP systems</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">client/server architecture</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">components</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data access in, advanced features</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data marts in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data warehouses in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">end-user interfaces</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">normalization in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">spreadsheet integration</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">OLAP tools</span></p>
+<p class="calibre95"><span class="calibre8">:OLD attribute reference (in SQL*Plus)</span></p>
+<p class="calibre95"><span class="calibre8">old-style joins</span></p>
+<p class="calibre95"><span class="calibre8">OLE-DB (Object Linking and Embedding for Database) (Microsoft)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ADO vs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">architecture</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">OLTP databases. <em class="italic">See</em> operational databases</span></p>
+<p class="calibre95"><span class="calibre8">ON clause: in join operations</span></p>
+<p class="calibre95"><span class="calibre8">ON COMMIT clause</span></p>
+<p class="calibre95"><span class="calibre8">ON DELETE CASCADE specification</span></p>
+<p class="calibre95"><span class="calibre8">ON DELETE clause</span></p>
+<p class="calibre95"><span class="calibre8">ON UPDATE CASCADE specification</span></p>
+<p class="calibre95"><span class="calibre8">ON UPDATE clause</span></p>
+<p class="calibre95"><span class="calibre8">one or more times symbol (+)</span></p>
+<p class="calibre95"><span class="calibre8">one-to-many relationships. <em class="italic">See</em> 1:M (one-to-many) relationships</span></p>
+<p class="calibre95"><span class="calibre8">one-to-one relationships. <em class="italic">See</em> 1:1 (one-to-one) relationships</span></p>
+<p class="calibre95"><span class="calibre8">online analytical processing. <em class="italic">See</em> OLAP</span></p>
+<p class="calibre95"><span class="calibre8">online transaction processing databases. <em class="italic">See</em> operational databases</span></p>
+<p class="calibre95"><span class="calibre8">OO data model. <em class="italic">See</em> object-oriented data model</span></p>
+<p class="calibre95"><span class="calibre8">OO DBMSs. <em class="italic">See</em> object-oriented database management systems</span></p>
+<p class="calibre95"><span class="calibre8">OODM. <em class="italic">See</em> object-oriented data model</span></p>
+<p class="calibre95"><span class="calibre8">OPEN command (PL/SQL)</span></p>
+<p class="calibre95"><span class="calibre8">Open Database Connectivity. <em class="italic">See</em> ODBC</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(Open Database Connectivity)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">operating systems</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security vulnerabilities</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">operation phase (DBLC)</span></p>
+<p class="calibre95"><span class="calibre8">operational data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating data warehouses from</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data warehouse data vs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">decision support data vs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional views of</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">operational databases (OLTP/transactional/production databases)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data extraction and filtering into decision</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">support databases from</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">designing, <em class="italic">See also</em> database design</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">unnormalized table defects</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">operational life span of information systems</span></p>
+<p class="calibre95"><span class="calibre8">operators</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conditional operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">logical operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">special operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> arithmetic operators; comparison operators; relational set operators</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">optimistic approach (concurrency control)</span></p>
+<p class="calibre95"><span class="calibre8">optimization (of queries). <em class="italic">See</em> query optimization</span></p>
+<p class="calibre95"><span class="calibre8">optimization modes in Oracle</span></p>
+<p class="calibre95"><span class="calibre8">optimizer (query optimizer)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">I/O cost comparisons</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">modes, changing</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">optimizer hints/instructions</span></p>
+<p class="calibre95"><span class="calibre8">optional attributes</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting rows with</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">optional participation (in relationships)</span></p>
+<p class="calibre95"><span class="calibre8">optional participation symbol (O)</span></p>
+<p class="calibre95"><span class="calibre8">O/R DBMSs. <em class="italic">See</em> object/relational database</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">management systems</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">OR logical operator</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">IN special operator alternative</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multiple OR conditions</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Oracle (RDBMS)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attribute display formats</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">BETWEEN special operator use</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">case sensitivity in search criteria</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">CASE tools</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">column widths</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conditions evaluation order</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">configuring an ODBC data source</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conversion functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">copying parts of tables into new tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">CREATE TABLE command</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating databases in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">credentials</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data storage management</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database administration using. <em class="italic">See</em></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database administration using Oracle</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database object management</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">datafiles</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">date and time functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">date arithmetic</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Enterprise Manager. <em class="italic">See</em> Enterprise Manager</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Excel connecting to an Oracle database</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">features</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">graphical tools for query optimization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">initialization parameters</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">line numbers in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listener service</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">login</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">market domination</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">materialized views</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">numeric functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">OLAP screen</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">optimization modes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">parsing in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">query optimization in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">referential constraint support</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Schema Manager</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sequences. <em class="italic">See</em> sequences (in Oracle)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">services</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">startup</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Storage Manager</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">string functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">surrogate key implementation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tablespaces. <em class="italic">See</em> tablespaces</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">UPPER function</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">user management</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Oracle Data Guard</span></p>
+<p class="calibre95"><span class="calibre8">Oracle Real Application Clusters (RAC)</span></p>
+<p class="calibre95"><span class="calibre8">Oracle services</span></p>
+<p class="calibre95"><span class="calibre8">Oracle SQL*Net interface</span></p>
+<p class="calibre95"><span class="calibre8">Oracle Transportable Tablespaces</span></p>
+<p class="calibre95"><span class="calibre8">ORDER BY clause</span></p>
+<p class="calibre95"><span class="calibre8">ordering listings</span></p>
+<p class="calibre95"><span class="calibre8">organizational performance: BI and</span></p>
+<p class="calibre95"><span class="calibre8">outer joins</span></p>
+<p class="calibre95"><span class="calibre8">outer query</span></p>
+<p class="calibre95"><span class="calibre8">overlapping subtypes (overlapping constraint)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">discriminator attributes for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">notation for</span></p></blockquote>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">P</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">PaaS (Platform as a Service)</span></p>
+<p class="calibre95"><span class="calibre8">page-level locks</span></p>
+<p class="calibre95"><span class="calibre8">pages (diskpages)</span></p>
+<p class="calibre95"><span class="calibre8">parentheses (( ))</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">argument delimiters</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">table definition delimiters</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">parsing phase of query processing</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in Oracle</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> query optimization</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">PART option (CREATE TABLE command)</span></p>
+<p class="calibre95"><span class="calibre8">partial completeness constraint</span></p>
+<p class="calibre95"><span class="calibre8">partial dependencies</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eliminating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">using with caution</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">partially replicated databases</span></p>
+<p class="calibre95"><span class="calibre8">participants (in relationships)</span></p>
+<p class="calibre95"><span class="calibre8">participation in relationships</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as optional or mandatory</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. referential integrity</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">partition key</span></p>
+<p class="calibre95"><span class="calibre8">partition tolerance in distributed data systems</span></p>
+<p class="calibre95"><span class="calibre8">partitioned data allocation</span></p>
+<p class="calibre95"><span class="calibre8">partitioning of databases. <em class="italic">See</em> data fragmentation</span></p>
+<p class="calibre95"><span class="calibre8">partitioning tables</span></p>
+<p class="calibre95"><span class="calibre8">parts of tables: copying into new tables</span></p>
+<p class="calibre95"><span class="calibre8">parts tracking</span></p>
+<p class="calibre95"><span class="calibre8">passing values to stored procedures</span></p>
+<p class="calibre95"><span class="calibre8">passive data dictionary</span></p>
+<p class="calibre95"><span class="calibre8">password security</span></p>
+<p class="calibre95"><span class="calibre8">#PCDATA keyword</span></p>
+<p class="calibre95"><span class="calibre8">percent sign (%): wildcard character</span></p>
+<p class="calibre95"><span class="calibre8">performance</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">information system performance factors</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">organizational performance</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> database performance</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">performance monitoring (of databases)</span></p>
+<p class="calibre95"><span class="calibre8">performance requirements. <em class="italic">See</em> database</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">performance requirements; reporting requirements</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">performance transparency (of DDBMSs)</span></p>
+<p class="calibre95"><span class="calibre8">performance tuning. <em class="italic">See</em> database</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">performance tuning; DBMS performance</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tuning; SQL performance tuning</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">periodicity (of data)</span></p>
+<p class="calibre95"><span class="calibre8">persistent relations. <em class="italic">See</em> tables (of relational databases)</span></p>
+<p class="calibre95"><span class="calibre8">persistent stored modules (PSMs)</span></p>
+<p class="calibre95"><span class="calibre8">personal analytics</span></p>
+<p class="calibre95"><span class="calibre8">personal productivity tool problems</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> spreadsheets</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">pessimistic locking</span></p>
+<p class="calibre95"><span class="calibre8">Pfizer: BI tool-based business problem solutions</span></p>
+<p class="calibre95"><span class="calibre8">PHP: Web database development code example</span></p>
+<p class="calibre95"><span class="calibre8">physical data format</span></p>
+<p class="calibre95"><span class="calibre8">physical design: logical design and</span></p>
+<p class="calibre95"><span class="calibre8">physical design stage (DBLC database design phase)</span></p>
+<p class="calibre95"><span class="calibre8">physical disk blocks. <em class="italic">See</em> disk blocks</span></p>
+<p class="calibre95"><span class="calibre8">physical independence</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Codd’s rule on</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">physical models (of data)</span></p>
+<p class="calibre95"><span class="calibre8">physical security</span></p>
+<p class="calibre95"><span class="calibre8">PKs. <em class="italic">See</em> primary keys</span></p>
+<p class="calibre95"><span class="calibre8">PL/SQL (Procedural Language SQL) (Oracle)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">code blocks. <em class="italic">See</em> PL/SQL blocks</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">commands. <em class="italic">See</em> PL/SQL commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">cursors</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">functions (stored functions)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">procedures. <em class="italic">See</em> stored procedures</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax. <em class="italic">See</em> PL/SQL syntax</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">triggers. <em class="italic">See</em> triggers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uses</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">PL/SQL blocks</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">comment indicator</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">debugging</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">PL/SQL commands</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">cursor processing commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SHOW ERRORS command</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">PL/SQL data types</span></p>
+<p class="calibre95"><span class="calibre8">PL/SQL functions (stored functions)</span></p>
+<p class="calibre95"><span class="calibre8">PL/SQL syntax</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">explicit cursor</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">stored functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">stored procedures</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">triggers</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">planning phase (SDLC)</span></p>
+<p class="calibre95"><span class="calibre8">Platform as a Service (PaaS)</span></p>
+<p class="calibre95"><span class="calibre8">Plattner, Hasso</span></p>
+<p class="calibre95"><span class="calibre8">plug-ins (for Web browsers)</span></p>
+<p class="calibre95"><span class="calibre8">plus sign (+)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">concatenate sign (Access/SQL Server)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">one or more times symbol</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Pochet, Stefano</span></p>
+<p class="calibre95"><span class="calibre8">policies (for database usage)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security policies</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">portability of DBMSs</span></p>
+<p class="calibre95"><span class="calibre8">portals</span></p>
+<p class="calibre95"><span class="calibre8">pound sign. <em class="italic">See</em> number sign (#)</span></p>
+<p class="calibre95"><span class="calibre8">PowerDesigner (Sybase Technology)</span></p>
+<p class="calibre95"><span class="calibre8">pre-aggregated data: denormalization and</span></p>
+<p class="calibre95"><span class="calibre8">precedence rules for arithmetic operators</span></p>
+<p class="calibre95"><span class="calibre8">predicate logic</span></p>
+<p class="calibre95"><span class="calibre8">predictive analytics</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">algorithms</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Preserved data security breach</span></p>
+<p class="calibre95"><span class="calibre8">primary keys (PKs) (identifiers)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attributes. <em class="italic">See</em> key attributes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">candidate. <em class="italic">See</em> candidate keys</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">composite. <em class="italic">See</em> composite keys</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">defining/specifying in new tables, from existing tables in Oracle</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and entity integrity</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evaluating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">of fact tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">foreign key links with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">identifying/selecting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">refining</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">replacing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">superkeys <em class="italic">See also</em> candidate keys</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">surrogate. <em class="italic">See</em> surrogate keys</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> candidate keys; foreign keys (FKs)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">prime attributes. <em class="italic">See</em> key attributes</span></p>
+<p class="calibre95"><span class="calibre8">privacy (of data)</span></p>
+<p class="calibre95"><span class="calibre8">private clouds</span></p>
+<p class="calibre95"><span class="calibre8">problem definition process (DBLC database initial study phase)</span></p>
+<p class="calibre95"><span class="calibre8">problem domain</span></p>
+<p class="calibre95"><span class="calibre8">Procedural Language SQL. <em class="italic">See</em> PL/SQL</span></p>
+<p class="calibre95"><span class="calibre8">procedural languages</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL vs</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">procedural programming: programming</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">language extensions for</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">procedure cache (SQL cache)</span></p>
+<p class="calibre95"><span class="calibre8">procedures (for database design, management and usage)</span></p>
+<p class="calibre95"><span class="calibre8">procedures, stored. <em class="italic">See</em> stored procedures</span></p>
+<p class="calibre95"><span class="calibre8">process distribution: levels of data and</span></p>
+<p class="calibre95"><span class="calibre8">processing mismatches (SQL vs. procedural languages)</span></p>
+<p class="calibre95"><span class="calibre8">processing speed requirements</span></p>
+<p class="calibre95"><span class="calibre8">product dimension (of facts)</span></p>
+<p class="calibre95"><span class="calibre8">PRODUCT relational operator</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating Cartesian products</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> cross join</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">product reordering: triggering</span></p>
+<p class="calibre95"><span class="calibre8">production databases. <em class="italic">See</em> operational databases</span></p>
+<p class="calibre95"><span class="calibre8">productivity of end-users (with DBMSs)</span></p>
+<p class="calibre95"><span class="calibre8">profiles</span></p>
+<p class="calibre95"><span class="calibre8">prognosis phase (data mining)</span></p>
+<p class="calibre95"><span class="calibre8">programmers: of database systems</span></p>
+<p class="calibre95"><span class="calibre8">programming</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">file system requirements</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">modular approach</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">programming exemptions: system failures from</span></p>
+<p class="calibre95"><span class="calibre8">programming interfaces</span></p>
+<p class="calibre95"><span class="calibre8">programming language extensions</span></p>
+<p class="calibre95"><span class="calibre8">programming languages</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Java</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for Web browsers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> database languages; host languages; procedural languages; SQL</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">programs. <em class="italic">See</em> application programs</span></p>
+<p class="calibre95"><span class="calibre8">PROJECT relational operator</span></p>
+<p class="calibre95"><span class="calibre8">projecting columns</span></p>
+<p class="calibre95"><span class="calibre8">properties</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">CAP properties of distributed data systems</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">of transactions</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">protocols</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DDBMS protocols</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for SQL data services (SDS)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">two-phase commit protocol</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">write-ahead protocol</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">prototyping application programs</span></p>
+<p class="calibre95"><span class="calibre8">providers (COM objects)</span></p>
+<p class="calibre95"><span class="calibre8">pseudo columns (in Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">PSMs (persistent stored modules)</span></p>
+<p class="calibre95"><span class="calibre8">public clouds</span></p>
+<p class="calibre95"><span class="calibre8">pull replication</span></p>
+<p class="calibre95"><span class="calibre8">push replication</span></p>
+<p class="calibre95"><span class="calibre8">pyramid image (of data mining)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">Q</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">QBE query generator (Access)</span></p>
+<p class="calibre95"><span class="calibre8">queries (in SQL)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ad hoc. <em class="italic">See</em> ad hoc queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">aggregate function queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">changing column data types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">changing column widths</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">combining rows from. <em class="italic">See</em> combining tables/sets</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">copying parts of tables into new tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating indexes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data dictionary usage</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in data warehouses</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">against decision support data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">defining primary/foreign keys in new tables created from existing tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting columns</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">distribution transparency formats</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">efficiency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">equivalence</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">formulating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">fragmentation transparency forma</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting columns</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting rows, from other tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows. <em class="italic">See</em> listing rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">local mapping transparency forma</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">location transparency forma</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">against operational data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">optimization process. <em class="italic">See</em> query optimization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">parsing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">processing sequence/phases</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">restoring saved changes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">result sets</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">saving changes in tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SELECT. <em class="italic">See</em> SELECT queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">selection criteria</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL commands example tables for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">subqueries. <em class="italic">See</em> SELECT subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">updating rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">on the Web</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Web database development code examples</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> database requests</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">query and reporting tool</span></p>
+<p class="calibre95"><span class="calibre8">query generator (QBE) (Access)</span></p>
+<p class="calibre95"><span class="calibre8">query languages</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> SQL</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">query optimization</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">algorithms for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data replication and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in distributed database systems/environment</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">graphical tools for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">indexes and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key terms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">materialized views in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">modes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for multidimensional data analysis</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems (exercises)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">process example</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">review questions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLAP and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summary</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> concurrency control; optimizer</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">query optimizer. <em class="italic">See</em> optimizer</span></p>
+<p class="calibre95"><span class="calibre8">query processing</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data for</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">query processing bottlenecks</span></p>
+<p class="calibre95"><span class="calibre8">query result sets</span></p>
+<p class="calibre95"><span class="calibre8">question mark (?): optional element</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">symbol</span></p></blockquote>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">R</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">RAC (Real Application Clusters) (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">RAD (Rapid Application Development)</span></p>
+<p class="calibre95"><span class="calibre8">RAID (Redundant Array of Independent Disks)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">common configurations</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">RAM (random access memory): as a query</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">processing bottleneck</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">random access memory (RAM): as a query</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">processing bottleneck</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">range partitioning</span></p>
+<p class="calibre95"><span class="calibre8">ranges of attribute values. <em class="italic">See</em> domains</span></p>
+<p class="calibre95"><span class="calibre8">rapid ad hoc data access</span></p>
+<p class="calibre95"><span class="calibre8">Rapid Application Development (RAD)</span></p>
+<p class="calibre95"><span class="calibre8">raw data. <em class="italic">See</em> data</span></p>
+<p class="calibre95"><span class="calibre8">RDBMSs (relational database management systems)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advantages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">cloud services costs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">enterprise RDBMSs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional data schema support</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLAP extensions to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Access (Microsoft); DB (IBM);</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DBMSs (database management systems);</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Oracle (RDBMS)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">RDDBMSs (relational distributed database management systems): CAP properties</span></p>
+<p class="calibre95"><span class="calibre8">RDO (Remote Data Objects) (Microsoft)</span></p>
+<p class="calibre95"><span class="calibre8">READ/WRITE conflict scenarios in concurrent transactions</span></p>
+<p class="calibre95"><span class="calibre8">Real Application Clusters (RAC) (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">records: in files</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> time-variant data (historical data)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">recovery. <em class="italic">See</em> database recovery; transaction recovery</span></p>
+<p class="calibre95"><span class="calibre8">recursive queries (recursive joins)</span></p>
+<p class="calibre95"><span class="calibre8">recursive relationships</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">1:1 relationships as 1:M relationships as</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">M:N relationships as</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Redundant Array of Independent Disks. <em class="italic">See</em> RAID</span></p>
+<p class="calibre95"><span class="calibre8">redundant data: denormalization and</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> data redundancy</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">redundant relationships</span></p>
+<p class="calibre95"><span class="calibre8">redundant transaction logs (transaction log backups)</span></p>
+<p class="calibre95"><span class="calibre8">referencing XML documents</span></p>
+<p class="calibre95"><span class="calibre8">referential constraints</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ON DELETE CASCADE specification</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ON UPDATE CASCADE specification</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">referential integrity</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">enforcement of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. participation in relationships</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">violations of</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">REFRESH clause</span></p>
+<p class="calibre95"><span class="calibre8">regenerating database statistics</span></p>
+<p class="calibre95"><span class="calibre8">regular entities</span></p>
+<p class="calibre95"><span class="calibre8">relational algebra</span></p>
+<p class="calibre95"><span class="calibre8">relational database management systems. <em class="italic">See</em> RDBMSs</span></p>
+<p class="calibre95"><span class="calibre8">relational databases</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">accessing, <em class="italic">See also</em> database connectivity interfaces</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advantages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Codd’s rules for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">indexes. <em class="italic">See</em> indexes (in relational databases)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">management systems. <em class="italic">See</em> RDBMSs</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(relational database management systems)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">model. <em class="italic">See</em> relational model</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional data storage in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">performance. <em class="italic">See</em> database performance</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">resources: measurement parameters reserving</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">simple example</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tables. <em class="italic">See</em> tables (of relational databases)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">relational DBMSs. <em class="italic">See</em> RDBMSs</span></p>
+<p class="calibre95"><span class="calibre8">relational DDBMSs: CAP properties</span></p>
+<p class="calibre95"><span class="calibre8">relational diagrams</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> ERDs (entity relationship diagrams)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">relational distributed database management systems (RDDBMSs): CAP properties</span></p>
+<p class="calibre95"><span class="calibre8">relational model</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">1:M relationship implementation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advantages and disadvantages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Big Data challenges to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data independence</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">extended. <em class="italic">See</em> extended relational data model (ERDM)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">integrity rules, enforcement of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key terms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key-value data model vs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">logical model as. <em class="italic">See</em> logical model</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">logical structure/view of data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">M:N relationship implementation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mathematical foundations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems (exercises)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">query language. <em class="italic">See</em> SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">review questions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">structural independence</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summary</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">terminology</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> ER model (entity relationship model)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">relational online analytical processing. <em class="italic">See</em> ROLAP</span></p>
+<p class="calibre95"><span class="calibre8">relational operations on tables</span></p>
+<p class="calibre95"><span class="calibre8">relational operators. <em class="italic">See</em> comparison</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">operators; relational set operators</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">relational schemas</span></p>
+<p class="calibre95"><span class="calibre8">relational set operators</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">closure property</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">implementation statements</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key operators</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">relational tables. <em class="italic">See</em> tables (of relational databases)</span></p>
+<p class="calibre95"><span class="calibre8">relational views. <em class="italic">See</em> views (virtual tables)</span></p>
+<p class="calibre95"><span class="calibre8">relations (in relational databases)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sets as, <em class="italic">See also</em> sets (of rows and columns)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tables as, <em class="italic">See also</em></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tables (of relational databases)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">union-compatible tables/relations</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">relationship degree types</span></p>
+<p class="calibre95"><span class="calibre8">relationship lines in ERDs</span></p>
+<p class="calibre95"><span class="calibre8">relationship strength</span></p>
+<p class="calibre95"><span class="calibre8">relationships (between/among entities)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">cardinalities (in ERDs)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">checklist, InsideFrontCover(t)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">connectivity</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">defining</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">degree types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">diagrams of. <em class="italic">See</em> ERDs (entity relationship diagrams)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">examples</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">identifying</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">identifying relationships. <em class="italic">See</em> ... strong</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">relationships, <em class="italic">below</em></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">implementing. <em class="italic">See</em> implementing relationships</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inheritance of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">“is-a” relationships</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in the key-value data model</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mandatory participation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mapping to tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multiple entities and (entity clusters)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">non-identifying relationships. <em class="italic">See</em> ... weak relationships, <em class="italic">below</em></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">optional participation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">participants</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">participation in, as optional or mandatory</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">redundant relationships</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">relational diagrams of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">strength among module entities</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">strong relationships weak entities in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">translating business rules into</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">weak relationships</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> 1:1 (one-to-one) relationships; 1:M (one-to-many) relationships; M:N (many-to-many) relationships</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Remote Data Objects (RDO) (Microsoft)</span></p>
+<p class="calibre95"><span class="calibre8">remote database servers: accessing</span></p>
+<p class="calibre95"><span class="calibre8">remote requests</span></p>
+<p class="calibre95"><span class="calibre8">remote transactions</span></p>
+<p class="calibre95"><span class="calibre8">repeating groups of entries (for attributes)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eliminating</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">replica transparency (of DDBMSs)</span></p>
+<p class="calibre95"><span class="calibre8">replicated data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">allocation of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mutual consistency rule</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> data replication</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">replicated data allocation</span></p>
+<p class="calibre95"><span class="calibre8">replicated databases</span></p>
+<p class="calibre95"><span class="calibre8">replication: of tables</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> data replication</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">report delays in file systems</span></p>
+<p class="calibre95"><span class="calibre8">reporting requirements: in database design</span></p>
+<p class="calibre95"><span class="calibre8">reporting styles (BI systems)</span></p>
+<p class="calibre95"><span class="calibre8">reporting tools (BI systems)</span></p>
+<p class="calibre95"><span class="calibre8">requests: I/O requests</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> database requests</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">required attributes</span></p>
+<p class="calibre95"><span class="calibre8">reserved words (keywords) (in SQL)</span></p>
+<p class="calibre95"><span class="calibre8">resources (of relational databases)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">measurement parameters</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">reserving</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">restoring saved changes</span></p>
+<p class="calibre95"><span class="calibre8">RESTRICT relational operator</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> SELECT command</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">restricting groups of data</span></p>
+<p class="calibre95"><span class="calibre8">right outer join</span></p>
+<p class="calibre95"><span class="calibre8">ROLAP (relational online analytical processing)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. MOLAP</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional data schema support</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and query optimization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL extension</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">very large database support</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">roles (database roles)</span></p>
+<p class="calibre95"><span class="calibre8">roll up operations</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in data warehouses</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> ROLLUP extension</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">ROLLBACK command (statement)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in transactions</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">rollback segment table space</span></p>
+<p class="calibre95"><span class="calibre8">ROLLUP extension (to GROUP BY clause)</span></p>
+<p class="calibre95"><span class="calibre8">root element in XML documents</span></p>
+<p class="calibre95"><span class="calibre8">ROUND function</span></p>
+<p class="calibre95"><span class="calibre8">round-robin partitioning</span></p>
+<p class="calibre95"><span class="calibre8">rounding numbers</span></p>
+<p class="calibre95"><span class="calibre8">row-level locks</span></p>
+<p class="calibre95"><span class="calibre8">row-level triggers</span></p>
+<p class="calibre95"><span class="calibre8">%ROWCOUNT cursor attribute (PL/SQL)</span></p>
+<p class="calibre95"><span class="calibre8">rows (in database tables) (tuples)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">accessing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">combining. <em class="italic">See</em> combining tables/sets</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">fetching from cursors: in embedded SQL in PL/SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting from other tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing. <em class="italic">See</em> listing rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">updating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in other tables</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">rule zero (Codd)</span></p>
+<p class="calibre95"><span class="calibre8">rule-based optimizer</span></p>
+<p class="calibre95"><span class="calibre8">rule-based query optimization algorithm</span></p>
+<p class="calibre95"><span class="calibre8">rules</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for defining a data warehouse</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">of precedence for arithmetic operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> business rules; integrity rules</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">run-time mismatches (SQL vs. procedural languages)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">S</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">SaaS (Software as a Service)</span></p>
+<p class="calibre95"><span class="calibre8">SAP in-memory DBMS</span></p>
+<p class="calibre95"><span class="calibre8">saving changes in tables</span></p>
+<p class="calibre95"><span class="calibre8">scan operations (table/index scan)</span></p>
+<p class="calibre95"><span class="calibre8">scheduler (of transactions)</span></p>
+<p class="calibre95"><span class="calibre8">scheduling transactions. <em class="italic">See</em> concurrency control</span></p>
+<p class="calibre95"><span class="calibre8">Schema Manager (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">schemas</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conceptual schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">decision support database schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">distributed global schema</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">external schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">internal schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multidimensional data schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">relational schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">snowflake schemasN</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">star. <em class="italic">See</em> star schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">XML schemas</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">scope (of systems)</span></p>
+<p class="calibre95"><span class="calibre8">scope and boundaries definition process (DBLC database initial study phase)</span></p>
+<p class="calibre95"><span class="calibre8">scripting languages: database connectivity interface support for</span></p>
+<p class="calibre95"><span class="calibre8">scripts (script files)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">CGI scripts</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SDLC. <em class="italic">See</em> Systems Development Life Cycle</span></p>
+<p class="calibre95"><span class="calibre8">SDS (SQL data services)</span></p>
+<p class="calibre95"><span class="calibre8">search criteria</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">adding conditional restrictions to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">case sensitivity</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> wildcard characters</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">second normal form (NF)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conversion to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in data warehouses</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">secondary keys</span></p>
+<p class="calibre95"><span class="calibre8">security (of data)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">breaches of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">controls. <em class="italic">See</em> access rights</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data redundancy and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database security</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DBMSs and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">file system problems</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">management of. <em class="italic">See</em> security management</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">policies</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vulnerabilities</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">security auditing and monitoring (of DBMSs)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data dictionary use in</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">security breaches</span></p>
+<p class="calibre95"><span class="calibre8">security controls. <em class="italic">See</em> access rights</span></p>
+<p class="calibre95"><span class="calibre8">security management</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DBA tasks</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">view use in</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">security policies</span></p>
+<p class="calibre95"><span class="calibre8">security threats</span></p>
+<p class="calibre95"><span class="calibre8">security vulnerabilities</span></p>
+<p class="calibre95"><span class="calibre8">segments in the hierarchical model</span></p>
+<p class="calibre95"><span class="calibre8">SELECT command (statement)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">clauses with. <em class="italic">See</em> FROM clause; GROUP</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">BY clause; HAVING clause; ORDER BY clause; USING clause; WHERE clause</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as relational operator</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> SELECT queries; SELEC</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">subqueries</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SELECT queries</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ad hoc. <em class="italic">See</em> ad hoc queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">arithmetic operators in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">averaging attribute values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">comparison operators in operations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">counting attribute values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">formulating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inner (nested). <em class="italic">See</em> SELECT subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inner query</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">INTERSECT queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">joining tables, with aliases</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows. <em class="italic">See</em> listing rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">logical operators in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">MINUS queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ordering listings</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">outer query</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">recursive queries (recursive joins)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">special operators in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">subquery result-based</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summing attribute values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">UNION/UNION ALL queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uniting tables</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SELECT relational operator</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> SELECT command</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SELECT subqueries</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ALL subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ANY subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attribute list subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">correlated subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">FROM subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">HAVING subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">IN subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inline subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting rows from other tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">joining tables with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">list-of-value subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows based on results of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">multirow operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">NOT IN subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">NULL subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">projecting columns</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">return value types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">single-value subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">updating rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uses (examples)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">virtual-table subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">WHERE subqueries</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">semantic data models</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evolution</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> extended relational data model</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(ERDM); object-oriented data model (OODM)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">semantic errors in transactions</span></p>
+<p class="calibre95"><span class="calibre8">semicolon (;): end command mark</span></p>
+<p class="calibre95"><span class="calibre8">semistructured data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database models</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">sequences (in Oracle)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">checking command</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dropping</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">pseudo columns for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in stored procedures</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">serializability (of transactions)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ensuring</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">serializable schedule (of transactions)</span></p>
+<p class="calibre95"><span class="calibre8">server virtualization</span></p>
+<p class="calibre95"><span class="calibre8">Server/Administration page (Oracle Enterprise Manager)</span></p>
+<p class="calibre95"><span class="calibre8">server-side activities in database performance tuning</span></p>
+<p class="calibre95"><span class="calibre8">server-side extensions (for Web servers)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Web-to-database middleware</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">servers (database servers)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">accessing remote servers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security vulnerabilities</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Web servers</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">service providers (COM objects)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">services</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database conversion services</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database migration services</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Oracle services</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">XML services</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> cloud services</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SET clause</span></p>
+<p class="calibre95"><span class="calibre8">set theory</span></p>
+<p class="calibre95"><span class="calibre8">set-level commands: Codd’s rule on</span></p>
+<p class="calibre95"><span class="calibre8">set-oriented commands</span></p>
+<p class="calibre95"><span class="calibre8">sets (entity sets)</span></p>
+<p class="calibre95"><span class="calibre8">sets (of rows and columns)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">combining. <em class="italic">See</em> combining tables/sets</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as tables/relations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> relations (in relational databases); tables (of relational databases)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">seven essentials of database security</span></p>
+<p class="calibre95"><span class="calibre8">SGML (Standard Generalized Markup Language)</span></p>
+<p class="calibre95"><span class="calibre8">shared locks</span></p>
+<p class="calibre95"><span class="calibre8">SHOW ERRORS command (SQL*Plus)</span></p>
+<p class="calibre95"><span class="calibre8">simple attributes</span></p>
+<p class="calibre95"><span class="calibre8">SimpleDB (Amazon)</span></p>
+<p class="calibre95"><span class="calibre8">single quotation mark (’): character attribute</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">delimiter</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">single-site processing, single-site data (SPSD)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">scenario</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">single-user databases</span></p>
+<p class="calibre95"><span class="calibre8">single-value subqueries</span></p>
+<p class="calibre95"><span class="calibre8">single-valued attributes</span></p>
+<p class="calibre95"><span class="calibre8">slice and dice operations (in data cubes)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"></span></p></blockquote>
+<p class="calibre95"><span class="calibre8">snowflake schemas</span></p>
+<p class="calibre95"><span class="calibre8">social media/networks</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and DDBMSs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and predictive analytics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sites</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">software (of database systems)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data-profiting software</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">master data management (MDM)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">system failures from</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">system performance guidelines</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> application programs; DBMSs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">(database management systems)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Software as a Service (SaaS)</span></p>
+<p class="calibre95"><span class="calibre8">software dependence: in internal models</span></p>
+<p class="calibre95"><span class="calibre8">software independence</span></p>
+<p class="calibre95"><span class="calibre8">sort cache</span></p>
+<p class="calibre95"><span class="calibre8">sort operation</span></p>
+<p class="calibre95"><span class="calibre8">sorting listings</span></p>
+<p class="calibre95"><span class="calibre8">SPARC (Standards Planning and Requirements Committee): ANSI/SPARC data modeling framework</span></p>
+<p class="calibre95"><span class="calibre8">sparsity (sparse data). <em class="italic">See</em> data sparsity</span></p>
+<p class="calibre95"><span class="calibre8">special operators</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">correlated subqueries with the EXISTS special operator</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">specialization (identifying entity subtypes)</span></p>
+<p class="calibre95"><span class="calibre8">specialization hierarchies</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">constraint scenarios</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">spreadsheets</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">databases vs.</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">OLAP system integration with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Excel (Microsoft)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Sprint database systems</span></p>
+<p class="calibre95"><span class="calibre8">SPSD scenario (single-site processing, singlesite data scenario)</span></p>
+<p class="calibre95"><span class="calibre8">SQL (Structured Query Language)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">advanced SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">call level interfaces (CLIs)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">commands. <em class="italic">See</em> SQL commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">communication area (SQLCA)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">constraints. <em class="italic">See</em> constraints (on data)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data types. <em class="italic">See</em> data types (SQL)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dialects</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dynamic SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">embedded SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">extensions: OLAP, ROLAP</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">focus</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">functions. <em class="italic">See</em> functions (in SQL)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">host languages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key terms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">language categories</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">limitations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and multidimensional data analysis</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">native connectivity</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">operations not supported</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">performance tuning</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems (exercises)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">procedural. <em class="italic">See</em> PL/SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. procedural languages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">programming language extensions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">queries. <em class="italic">See</em> queries (in SQL); SELEC queries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">review questions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">standard. <em class="italic">See</em> SQL standard</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">static SQL</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">status and error reporting variables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summaries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax. <em class="italic">See</em> syntax (SQL)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQL cache (procedure cache)</span></p>
+<p class="calibre95"><span class="calibre8">SQL commands (statements)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">aggregate functions with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attribute names in command sequences</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data definition. <em class="italic">See</em> data definition commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data manipulation. <em class="italic">See</em> data manipulation commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DDL statements. <em class="italic">See</em> data definition commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DML statements. <em class="italic">See</em> data manipulation commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">embedding in host languages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">end command mark (;)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as set-oriented commands</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax notation</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">table names in command sequences</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> PL/SQL commands; <em class="italic">and specific SQL commands</em></span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQL commands example database</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data dictionary model</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQL communication area (SQLCA)</span></p>
+<p class="calibre95"><span class="calibre8">SQL constraints. <em class="italic">See</em> constraints (on data)</span></p>
+<p class="calibre95"><span class="calibre8">SQL data services (SDS)</span></p>
+<p class="calibre95"><span class="calibre8">SQL engine</span></p>
+<p class="calibre95"><span class="calibre8">SQL execution phase</span></p>
+<p class="calibre95"><span class="calibre8">SQL fetching phase</span></p>
+<p class="calibre95"><span class="calibre8">SQL functions. <em class="italic">See</em> functions (in SQL)</span></p>
+<p class="calibre95"><span class="calibre8">SQL parsing phase</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> query optimization</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQL performance tuning</span></p>
+<p class="calibre95"><span class="calibre8">SQL queries. <em class="italic">See</em> queries (in SQL)</span></p>
+<p class="calibre95"><span class="calibre8">SQL Server (Microsoft)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conversion functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">date and time functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">date arithmetic</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">features</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">indexed views</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">metadata (data definitions)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">numeric functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">OLAP screen</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">referential constraint support</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">string functions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">surrogate key implementation in</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQL standard implementation of/support for</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> ANSI SQL (ANSI/ISO standard)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQL statements. <em class="italic">See</em> SQL commands</span></p>
+<p class="calibre95"><span class="calibre8">SQL status and error reporting variables</span></p>
+<p class="calibre95"><span class="calibre8">SQL-based relational database application parts</span></p>
+<p class="calibre95"><span class="calibre8">SQL*Net interface (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">SQL*Plus (Oracle)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">attribute references</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">displaying messages in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">query optimization in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SHOW ERRORS command</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SQLCA (SQL communication area)</span></p>
+<p class="calibre95"><span class="calibre8">SQLCODE variable</span></p>
+<p class="calibre95"><span class="calibre8">SQLSTATE variable</span></p>
+<p class="calibre95"><span class="calibre8">Standard Generalized Markup Language (SGML)</span></p>
+<p class="calibre95"><span class="calibre8">standards</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data modeling framework</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for database usage</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">design standards</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ER modeling standards</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ODBC API compliance/support levels</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> ANSI SQL (ANSI/ISO standard)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL standard</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Standards Planning and Requirements</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Committee (SPARC): ANSI/SPARC data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">modeling framework</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">star schemas</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">components</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">performance-improving techniques</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">representation of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLAP and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">snowflake schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uses</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">startup in Oracle</span></p>
+<p class="calibre95"><span class="calibre8">stateless systems</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">the Web as</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">statement-level triggers</span></p>
+<p class="calibre95"><span class="calibre8">statements. <em class="italic">See</em> SQL commands (statements); <em class="italic">and specific SQL commands</em></span></p>
+<p class="calibre95"><span class="calibre8">static query optimization</span></p>
+<p class="calibre95"><span class="calibre8">static SQL</span></p>
+<p class="calibre95"><span class="calibre8">statistical information. <em class="italic">See</em> database statistics</span></p>
+<p class="calibre95"><span class="calibre8">statistically based query optimization algorithm</span></p>
+<p class="calibre95"><span class="calibre8">Storage Manager (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">storage of data. <em class="italic">See</em> data storage</span></p>
+<p class="calibre95"><span class="calibre8">stored functions (in PL/SQL)</span></p>
+<p class="calibre95"><span class="calibre8">stored procedures (in PL/SQL)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">executing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">passing values to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sequences in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">testing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uses</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">strength of relationships</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">among module entities</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">string attributes. <em class="italic">See</em> strings</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">string delimiters (‘, ”)</span></p>
+<p class="calibre95"><span class="calibre8">string functions</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> conversion functions</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">strings (character/string attributes)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">comparing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">concatenating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting dates to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting numbers to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting to dates</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting to lowercase</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting to numbers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">converting to uppercase</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">returning length values</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">returning substrings in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> attribute values; attributes (of entities)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">strong entities</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mapping to tables</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">strong relationships (identifying relationships)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">weak entities in</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">structural dependence: of file systems</span></p>
+<p class="calibre95"><span class="calibre8">structural independence</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">of the relational model</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">structured data</span></p>
+<p class="calibre95"><span class="calibre8">Structured Query Language. <em class="italic">See</em> SQL</span></p>
+<p class="calibre95"><span class="calibre8">subelements in XML documents</span></p>
+<p class="calibre95"><span class="calibre8">subject-oriented data in data warehouses</span></p>
+<p class="calibre95"><span class="calibre8">subordinates (DDBMS nodes)</span></p>
+<p class="calibre95"><span class="calibre8">subqueries. <em class="italic">See</em> SELECT subqueries</span></p>
+<p class="calibre95"><span class="calibre8">subschemas</span></p>
+<p class="calibre95"><span class="calibre8">SUBSTR/SUBSTRING functions</span></p>
+<p class="calibre95"><span class="calibre8">substrings: returning</span></p>
+<p class="calibre95"><span class="calibre8">subtracting dates</span></p>
+<p class="calibre95"><span class="calibre8">subtype discriminator (discriminator attribute)</span></p>
+<p class="calibre95"><span class="calibre8">subtype relationships: mapping to tables</span></p>
+<p class="calibre95"><span class="calibre8">subtypes. <em class="italic">See</em> entity subtypes</span></p>
+<p class="calibre95"><span class="calibre8">success factors for database administration and information systems</span></p>
+<p class="calibre95"><span class="calibre8">SUM function</span></p>
+<p class="calibre95"><span class="calibre8">summary fact tables</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dynamic. <em class="italic">See</em> materialized views</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">superkeys</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> candidate keys</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">supertype relationships: mapping to tables</span></p>
+<p class="calibre95"><span class="calibre8">supertypes. <em class="italic">See</em> entity supertypes</span></p>
+<p class="calibre95"><span class="calibre8">surrogate keys</span></p>
+<p class="calibre95"><span class="calibre8">Swisscom: BI tool-based business problem solutions</span></p>
+<p class="calibre95"><span class="calibre8">Sybase Technology’s PowerDesigner</span></p>
+<p class="calibre95"><span class="calibre8">synonyms: avoiding</span></p>
+<p class="calibre95"><span class="calibre8">syntax (SQL)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">command notation</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for generating database statistics manually</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for materialized views</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">PL/SQL. <em class="italic">See</em> PL/SQL syntax</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for sequences (in Oracle)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also specific SQL commands clauses, and functions</em></span></p></blockquote>
+<p class="calibre95"><span class="calibre8">SYSADMs (systems administrators)</span></p>
+<p class="calibre95"><span class="calibre8">SYSDATE function (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">system administration: file system problems</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> database administration</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">system catalog</span></p>
+<p class="calibre95"><span class="calibre8">system security. <em class="italic">See</em> security (of data)</span></p>
+<p class="calibre95"><span class="calibre8">system support activities</span></p>
+<p class="calibre95"><span class="calibre8">system table space</span></p>
+<p class="calibre95"><span class="calibre8">systems administrators (SYSADMs)</span></p>
+<p class="calibre95"><span class="calibre8">systems analysis</span></p>
+<p class="calibre95"><span class="calibre8">systems analysts</span></p>
+<p class="calibre95"><span class="calibre8">systems design. <em class="italic">See</em> database design</span></p>
+<p class="calibre95"><span class="calibre8">systems development</span></p>
+<p class="calibre95"><span class="calibre8">Systems Development Life Cycle (SDLC)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Database Life Cycle parallels</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tool support for. <em class="italic">See</em> CASE tools</span></p></blockquote>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">T</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">table access operation</span></p>
+<p class="calibre95"><span class="calibre8">table aliases</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in correlated subqueries</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">joining tables with</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">table constraints</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">adding/changing/deleting</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">table definition delimiters (())</span></p>
+<p class="calibre95"><span class="calibre8">table element delimiter (,)</span></p>
+<p class="calibre95"><span class="calibre8">table names: in SQL command sequences</span></p>
+<p class="calibre95"><span class="calibre8">table scan operation</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">index scan vs</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">table spaces (file groups)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for high-usage tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> tablespaces (in Oracle)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">table storage organizations</span></p>
+<p class="calibre95"><span class="calibre8">table-level locks</span></p>
+<p class="calibre95"><span class="calibre8">tables (of relational databases)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">accessing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics, when wellformed</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">clustered tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">columns. <em class="italic">See</em> columns (in database tables)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">common attributes, <em class="italic">See also</em></span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">foreign keys</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">composite. <em class="italic">See</em> composite entities</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conversion of. <em class="italic">See</em> normalization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">copying parts into new tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating, defining constraints</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">when, from parts of tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> combining tables/sets</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creation and load order importance</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DataTables (in ADO.NET)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with decision support data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting columns</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">denormalization of. <em class="italic">See</em> denormalization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dimension. <em class="italic">See</em> dimension tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">entities as</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">entity sets as</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">fact. <em class="italic">See</em> fact tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. files</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">generating attribute value aggregates</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">high-usage tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">index-organized tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">indexing ; unnormalized</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting columns in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">inserting rows in. <em class="italic">See</em> inserting rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">joining, with aliases with subqueries, <em class="italic">See also</em> join operations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">linking tables (in M:N to 1:M conversions)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">links between</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">listing rows in. <em class="italic">See</em> listing rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">measurement parameters</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">merging</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">normal forms. <em class="italic">See</em> normal forms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">normalization of. <em class="italic">See</em> normalization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with operational data</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">operators on. <em class="italic">See</em> relational set operators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">partitioning</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">relational operations on</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as relations, <em class="italic">See also</em> relations (in relational databases)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">replication of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">restoring saved changes in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">rows. <em class="italic">See</em> rows (in database tables)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">saving changes in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">scanning</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sets as, . <em class="italic">See also</em> sets (of rows and columns)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">sorting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">spaces. <em class="italic">See</em> table spaces</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL commands example</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">structures. <em class="italic">See</em> normal forms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">union-compatible tables/relations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uniting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">unnormalized defects</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">updating base/master tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">updating rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in other tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">virtual. <em class="italic">See</em> views</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">tablespaces (in Oracle)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Transportable Tablespaces</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> table spaces</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">tags: HTML and XML tags</span></p>
+<p class="calibre95"><span class="calibre8">technological aspect of DBMS introductions</span></p>
+<p class="calibre95"><span class="calibre8">technological changes: and DDBMSs</span></p>
+<p class="calibre95"><span class="calibre8">telephone numbers: as character data</span></p>
+<p class="calibre95"><span class="calibre8">temporary table space</span></p>
+<p class="calibre95"><span class="calibre8">Teorey, Toby J</span></p>
+<p class="calibre95"><span class="calibre8">terminology</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">B2B transaction differences</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for data models</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> key terms</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">ternary relationships</span></p>
+<p class="calibre95"><span class="calibre8">testing</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">applications</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">databases</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">stored procedures</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">triggers</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">testing and evaluation phase (DBLC)</span></p>
+<p class="calibre95"><span class="calibre8">theta join</span></p>
+<p class="calibre95"><span class="calibre8">third normal form (NF)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conversion to</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Boyce-Codd normal form (BCNF)</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">three-dimensional cubes. <em class="italic">See</em> data cubes</span></p>
+<p class="calibre95"><span class="calibre8">time</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">adding periods to dates</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data types</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">time dimension (of facts)</span></p>
+<p class="calibre95"><span class="calibre8">time functions</span></p>
+<p class="calibre95"><span class="calibre8">time IDs for warehouse data</span></p>
+<p class="calibre95"><span class="calibre8">time stamping (of transactions)</span></p>
+<p class="calibre95"><span class="calibre8">time-variant data (historical data)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in data warehouses</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">maintaining</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">separating current data from</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">timespan (of data)</span></p>
+<p class="calibre95"><span class="calibre8">TMs (transaction managers)</span></p>
+<p class="calibre95"><span class="calibre8">TO_CHAR function (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">TO_DATE function (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">TO_NUMBER function (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">today’s date: returning</span></p>
+<p class="calibre95"><span class="calibre8">Toffler, Alvin</span></p>
+<p class="calibre95"><span class="calibre8">tools</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">BI tools, business problem solutions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">based on</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">conceptual model design tools</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for data analysis</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for data mining</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for data reporting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for data visualization</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for database administration</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for ERD development</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ETL tools</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">MOLAP tools</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">OLAP tools</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">top-down design</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. bottom-up designN</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">total completeness constraint</span></p>
+<p class="calibre95"><span class="calibre8">TPs (transaction processors)</span></p>
+<p class="calibre95"><span class="calibre8">training and supporting users</span></p>
+<p class="calibre95"><span class="calibre8">transaction consistency</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eventual consistency</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">transaction log</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">backups (redundant logs)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">example</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">write-ahead-log protocol</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">transaction log backups (redundant transaction logs)</span></p>
+<p class="calibre95"><span class="calibre8">transaction managers (TMs)</span></p>
+<p class="calibre95"><span class="calibre8">transaction processors. <em class="italic">See</em> TPs</span></p>
+<p class="calibre95"><span class="calibre8">transaction recovery</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">process example</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">transaction speed requirements</span></p>
+<p class="calibre95"><span class="calibre8">transaction transparency (of DBMSSs)</span></p>
+<p class="calibre95"><span class="calibre8">transactional databases. <em class="italic">See</em> operational databases</span></p>
+<p class="calibre95"><span class="calibre8">transactions (business transactions). <em class="italic">See</em></span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">business transactions on the Internet</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">transactions (database transactions)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">atomicity</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">beginning</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">COMMIT statement in, premature COMMIT effects, twophase</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">commit protocol</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">concurrency control. <em class="italic">See</em> concurrency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">control</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">concurrent. <em class="italic">See</em> concurrent transactions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">consistency. <em class="italic">See</em> transaction consistency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">constraints on</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">decision support data transactions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">distributed transactions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">durability</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">evaluating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">first-come, first-served scheduling of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">interrupted/incomplete transactions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">isolation of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">key terms</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">locks for. <em class="italic">See</em> locks (on data items)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">managing with SQL statements</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">operational data transactions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">problems (exercises)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">properties</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">recovery of. <em class="italic">See</em> transaction recovery</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">remote transactions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as requests. <em class="italic">See</em> database requests</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">review questions</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLLBACK statement in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">scheduler</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">scheduling. <em class="italic">See</em> concurrency control</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">serializability, ensuring</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">summary</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">system failures from</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">two-phase commit protocol</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">validation of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> queries</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">transitive dependencies</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">eliminating</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">translating XML documents</span></p>
+<p class="calibre95"><span class="calibre8">transparency features (of DDBMSs)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">distribution transparency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">failure transparency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">heterogeneity transparency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">performance transparency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">replica transparency</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">transaction transparency</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Transportable Tablespaces (Oracle)</span></p>
+<p class="calibre95"><span class="calibre8">triggers (in PL/SQL)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">defining</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DML statement predicates</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">syntax</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">testing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">types</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uses</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">using variables in</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">tuples. <em class="italic">See</em> rows (in database tables)</span></p>
+<p class="calibre95"><span class="calibre8">twelve rules for defining a data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">warehouse</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">two-phase commit protocol</span></p>
+<p class="calibre95"><span class="calibre8">two-phase locking</span></p>
+<p class="calibre95"><span class="calibre8">%TYPE data type (PL/SQL)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">U</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">UDA architecture (Universal Data Access architecture)</span></p>
+<p class="calibre95"><span class="calibre8">UML (Unified Modeling Language)</span></p>
+<p class="calibre95"><span class="calibre8">UML class diagrams (UML notation)</span></p>
+<p class="calibre95"><span class="calibre8">unary relationships</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as recursive relationships</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">uncommitted data (concurrent transactions problem)</span></p>
+<p class="calibre95"><span class="calibre8">underlined identifiers</span></p>
+<p class="calibre95"><span class="calibre8">underscore (_)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">naming convention</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">wildcard character</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Unified Modeling Language (UML)</span></p>
+<p class="calibre95"><span class="calibre8">UNION ALL statement</span></p>
+<p class="calibre95"><span class="calibre8">UNION relational operator</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> UNION statement</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">UNION statement</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> UNION relational operator</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">union-compatible tables/relations</span></p>
+<p class="calibre95"><span class="calibre8">unique attributes: nulls from</span></p>
+<p class="calibre95"><span class="calibre8">unique composite indexes</span></p>
+<p class="calibre95"><span class="calibre8">UNIQUE constraint</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">enforcement of</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">unique fragment condition</span></p>
+<p class="calibre95"><span class="calibre8">unique indexes</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">composite indexes</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">deleting</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">unique values: listing rows with</span></p>
+<p class="calibre95"><span class="calibre8">uniqueness (of time stamp values)</span></p>
+<p class="calibre95"><span class="calibre8">uniting tables</span></p>
+<p class="calibre95"><span class="calibre8">Universal Data Access architecture (UDA architecture)</span></p>
+<p class="calibre95"><span class="calibre8">unnormalized tables (in production databases): defects in</span></p>
+<p class="calibre95"><span class="calibre8">unreplicated databases</span></p>
+<p class="calibre95"><span class="calibre8">unstructured data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database models</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Big Data</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">updatable views</span></p>
+<p class="calibre95"><span class="calibre8">update anomalies</span></p>
+<p class="calibre95"><span class="calibre8">UPDATE command: updating rows</span></p>
+<p class="calibre95"><span class="calibre8">update operations</span></p>
+<p class="calibre95"><span class="calibre8">updating of materialized views</span></p>
+<p class="calibre95"><span class="calibre8">updating of relational databases</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">base/master tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">rows</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in other tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">unnormalized tables and</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">upgrading DBMSs</span></p>
+<p class="calibre95"><span class="calibre8">UPPER function</span></p>
+<p class="calibre95"><span class="calibre8">uppercase: converting strings to</span></p>
+<p class="calibre95"><span class="calibre8">user access management (DBA tasks)</span></p>
+<p class="calibre95"><span class="calibre8">user data table space</span></p>
+<p class="calibre95"><span class="calibre8">user interfaces. <em class="italic">See</em> end-user interfaces</span></p>
+<p class="calibre95"><span class="calibre8">user processes</span></p>
+<p class="calibre95"><span class="calibre8">users (of database systems)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">access management</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">access rights</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">authentication of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database administrators. <em class="italic">See</em> DBAs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database designers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">end. <em class="italic">See</em> end users</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">managing in Oracle</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security vulnerabilities</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">system administrators</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">system analysts and programmers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">training and supporting</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">types/classifications</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">USING clause: in join operations</span></p>
+<p class="calibre95"><span class="calibre8">utility software</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">V</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">validating the logical model</span></p>
+<p class="calibre95"><span class="calibre8">values. <em class="italic">See</em> attribute values</span></p>
+<p class="calibre95"><span class="calibre8">VARCHAR2 data type (PL/SQL)</span></p>
+<p class="calibre95"><span class="calibre8">variables</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">host variables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">SQL status and error reporting variables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">using in triggers</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">VBScript</span></p>
+<p class="calibre95"><span class="calibre8">vendor dependence in DBMSs</span></p>
+<p class="calibre95"><span class="calibre8">verification of the ER model</span></p>
+<p class="calibre95"><span class="calibre8">vertical fragmentation</span></p>
+<p class="calibre95"><span class="calibre8">very large databases (VLDBs)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ROLAP support for</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">view updating: Codd’s rule on</span></p>
+<p class="calibre95"><span class="calibre8">views (virtual tables)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">creating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">unnormalized tables and</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">identifying</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security management usage</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">updatable views</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">virtual memory</span></p>
+<p class="calibre95"><span class="calibre8">Virtual Private Database (VPD)</span></p>
+<p class="calibre95"><span class="calibre8">virtual tables. <em class="italic">See</em> views</span></p>
+<p class="calibre95"><span class="calibre8">virtual-table subqueries</span></p>
+<p class="calibre95"><span class="calibre8">virtualization</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">of databases</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">server virtualization</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Visio (Microsoft)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Category symbol/shape</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data modeling in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ERD development screens</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">M:N relationship implementation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">subtype discriminator</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">VLDBs. <em class="italic">See</em> very large databases</span></p>
+<p class="calibre95"><span class="calibre8">VPD (Virtual Private Database)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">W</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">W3C (World Wide Web Consortium): XML/XML schema standards</span></p>
+<p class="calibre95"><span class="calibre8">wait/die scheme</span></p>
+<p class="calibre95"><span class="calibre8">warehouses. <em class="italic">See</em> data warehouses</span></p>
+<p class="calibre95"><span class="calibre8">weak entities</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">composite primary keys as identifiers of</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">mapping to tables</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">ON DELETE CASCADE as recommended for</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">weak relationships (non-identifying relationships)</span></p>
+<p class="calibre95"><span class="calibre8">Web (World Wide Web)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">as a stateless system</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">business transactions on (e-commerce) <em class="italic">See also</em> B2B transactions/exchanges</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and database design</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and DDBMSs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">queries on</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Internet</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web application servers</span></p>
+<p class="calibre95"><span class="calibre8">Web applications: data validation for</span></p>
+<p class="calibre95"><span class="calibre8">Web browsers</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">client-side extensions</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web database connectivity. <em class="italic">See</em> Interne</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">database connectivity</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web database development code examples</span></p>
+<p class="calibre95"><span class="calibre8">Web operations: NoSQL database support</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> B2B transactions/exchanges</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web pages</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">development features in XML</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">dynamic Web pages</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">translating XML documents into</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web server interfaces</span></p>
+<p class="calibre95"><span class="calibre8">Web servers</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">application servers</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">extensions to. <em class="italic">See</em> Web-to-database</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">middleware</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">interfaces</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and queries on the Web</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">server-side extensions</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web-based transactions. <em class="italic">See</em> B2B transactions/</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">exchanges</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">Web-to-database middleware</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">operations (actions)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8"><em class="italic">See also</em> Web application servers; Web</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">server interfaces</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">WHERE clause</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">error messages from</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in join operations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">logical operators with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">in row selection operations</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">special operators with</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">WHERE subqueries</span></p>
+<p class="calibre95"><span class="calibre8">WHILE loops in PL/SQL blocks</span></p>
+<p class="calibre95"><span class="calibre8">wildcard characters</span></p>
+<p class="calibre95"><span class="calibre8">workgroup databases</span></p>
+<p class="calibre95"><span class="calibre8">workstations</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">diskless</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">security vulnerabilities</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">World Wide Web. <em class="italic">See</em> Web (World Wide Web)</span></p>
+<p class="calibre95"><span class="calibre8">World Wide Web Consortium (WC): XML/XML schema standards</span></p>
+<p class="calibre95"><span class="calibre8">wound/wait scheme</span></p>
+<p class="calibre95"><span class="calibre8">write-ahead protocol</span></p>
+<p class="calibre95"><span class="calibre8">write-ahead-log protocol</span></p>
+<p class="calibre95"><span class="calibre8">write-throughs (immediate updates)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">X</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">XHTML (Extensible Hypertext Markup Language)</span></p>
+<p class="calibre95"><span class="calibre8">XML (Extensible Markup Language)</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">B2B transactions/exchanges, example</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data presentation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">data validation in</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DBMSs support for</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">DTDs (Document Type Definitions)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">vs. EDI</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and HTML</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">and legacy systems integration</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">schemas</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">uses (applications)</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">W3C standards</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">Web page development features</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">XML data</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">binding of to HTML documents</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">displaying</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">validation of</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">XML data model: evolution</span></p>
+<p class="calibre95"><span class="calibre8">XML databases</span></p>
+<p class="calibre95"><span class="calibre8">XML documents</span></p>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">characteristics</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">displaying</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">with DTDs</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">features</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">referencing</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">translating</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">XML schemas with</span></p></blockquote>
+<blockquote class="calibre38"><p class="calibre22"><span class="calibre8">XSD documents resembling</span></p></blockquote>
+<p class="calibre95"><span class="calibre8">XML schema definitions (XSDs)</span></p>
+<p class="calibre95"><span class="calibre8">XML schemas</span></p>
+<p class="calibre95"><span class="calibre8">XML services</span></p>
+<p class="calibre95"><span class="calibre8">XML tags</span></p>
+<p class="calibre95"><span class="calibre8">XSD documents</span></p>
+<p class="calibre95"><span class="calibre8">XSDs (XML schema definitions)</span></p>
+<p class="calibre95"><span class="calibre8">XSL (Extensible Style Language) specification</span></p>
+<p class="calibre95"><span class="calibre8">XSL style sheets</span></p>
+<p class="calibre95"><span class="calibre8">XSLTs (Extensible Style Language Transformations)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">Y</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">YEAR function (Access/SQL Server)</span></p>
+<hr class="calibre10"/><p class="calibre6"><span class="calibre8"><span class="calibre14">Z</span></span></p>
+<hr class="calibre10"/><p class="calibre95"><span class="calibre8">zero or more times symbol (*)</span></p>  <div class="mbppagebreak" id="calibre_pb_38"></div></body></html>
